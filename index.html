@@ -1,1324 +1,971 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Janet Jefferson — Book Specialist Marketer. Strategic, structured, results-driven book marketing for authors who are serious about success.">
-    <meta name="keywords" content="book marketing, author marketing, book launch, Amazon optimization, author branding, Janet Jefferson, book specialist">
-    <meta name="author" content="Janet Jefferson">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Janet Jefferson | Book Specialist Marketer">
-    <meta property="og:description" content="Strategic book marketing for authors who are ready to scale. Professional, structured, results-driven.">
-    <meta property="og:type" content="website">
-    <title>Janet Jefferson | Book Specialist Marketer — Strategic Marketing for Serious Authors</title>
-    <link rel="icon" type="image/jpeg" href="janet picture.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Janet Jefferson — Book Specialist Marketer. Strategic, structured, results-driven book marketing for authors who are serious about long-term success.">
+<meta name="keywords" content="book marketing, author marketing, book launch strategy, Amazon optimization, author branding, Janet Jefferson">
+<meta name="author" content="Janet Jefferson">
+<meta property="og:title" content="Janet Jefferson | Book Specialist Marketer">
+<meta property="og:description" content="Strategic book marketing for authors who are ready to scale. Professional. Structured. Results-driven.">
+<meta property="og:type" content="website">
+<title>Janet Jefferson | Book Specialist Marketer — Strategic Marketing for Serious Authors</title>
+<link rel="icon" type="image/jpeg" href="JANET PICTURE.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Inter:wght@200;300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN TOKENS
+============================================================ */
+:root {
+  --n1:#05070f;--n2:#090c18;--n3:#0d1122;--n4:#11162c;--n5:#161d38;--n6:#1b2444;
+  --g1:#f2d47c;--g2:#dab95e;--g3:#c9a448;--g4:#b89036;--g5:#a07828;--g6:#886420;
+  --s1:#0b0f1e;--s2:#10152a;--s3:#151b34;
+  --sc:linear-gradient(155deg,#131838,#1b2350);
+  --tw:#fff;--tc:#f4efe3;--tl:#d8d4c8;--tm:#8886a0;--td:#5a5870;
+  --b1:rgba(201,164,72,.07);--b2:rgba(201,164,72,.14);--b3:rgba(201,164,72,.26);--b4:rgba(201,164,72,.44);
+  --gsm:0 2px 18px rgba(201,164,72,.08);--gmd:0 6px 32px rgba(201,164,72,.13);--glg:0 12px 48px rgba(201,164,72,.19);
+  --ssm:0 2px 10px rgba(0,0,0,.2);--smd:0 6px 28px rgba(0,0,0,.34);--slg:0 14px 48px rgba(0,0,0,.5);--sxl:0 24px 68px rgba(0,0,0,.6);
+  --gg:linear-gradient(135deg,#c9a448,#dfbe64,#b89036);
+  --gh:linear-gradient(150deg,#05070f 0%,#0d1122 35%,#11162c 65%,#090f26 100%);
+  --ease:cubic-bezier(.25,.46,.45,.94);--tr:all .4s cubic-bezier(.25,.46,.45,.94);
+}
 
-    <!-- Font Awesome 6 Pro -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+/* ============================================================
+   KEYFRAMES
+============================================================ */
+@keyframes plReveal{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes barFill{0%{width:0}40%{width:42%}72%{width:76%}100%{width:100%}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes scUp{from{opacity:0;transform:scale(.87)}to{opacity:1;transform:scale(1)}}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes pl{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes tw{0%,100%{opacity:.12;transform:scale(1)}50%{opacity:.7;transform:scale(1.5)}}
+@keyframes bpulse{0%,100%{box-shadow:0 0 0 0 rgba(201,164,72,.32)}50%{box-shadow:0 0 0 9px rgba(201,164,72,0)}}
+@keyframes shimmer{0%{left:-100%}100%{left:100%}}
+@keyframes rotateOrb{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+@keyframes gradMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
-    <!-- AOS Scroll Animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+/* ============================================================
+   RESET & BASE
+============================================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--n1);color:var(--tl);line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--g3);color:var(--n1)}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit;transition:var(--tr)}
+ul{list-style:none}
+button{font-family:inherit}
 
-    <style>
-        /* ================================================================
-           ROOT DESIGN SYSTEM
-        ================================================================ */
-        :root {
-            /* Deep Navy Palette */
-            --navy-1: #060810;
-            --navy-2: #0a0d18;
-            --navy-3: #0e1220;
-            --navy-4: #121830;
-            --navy-5: #161e3c;
-            --navy-6: #1c2548;
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--n1)}
+::-webkit-scrollbar-thumb{background:var(--g5);border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:var(--g3)}
 
-            /* Gold Palette */
-            --gold-1: #f0d078;
-            --gold-2: #d4b45c;
-            --gold-3: #c8a448;
-            --gold-4: #b89438;
-            --gold-5: #a07e28;
-            --gold-6: #886820;
+/* ============================================================
+   PRELOADER
+============================================================ */
+.pl{position:fixed;inset:0;background:var(--n1);display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:999999;transition:opacity .9s ease,visibility .9s ease}
+.pl.gone{opacity:0;visibility:hidden;pointer-events:none}
+.pl-ln{width:48px;height:1.5px;background:var(--gg);margin-bottom:26px;opacity:0;animation:plReveal .7s ease .2s forwards}
+.pl-nm{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:var(--g3);letter-spacing:1px;opacity:0;animation:plReveal .7s ease .45s forwards}
+.pl-rl{font-size:.67rem;font-weight:600;letter-spacing:5px;text-transform:uppercase;color:var(--tm);margin-top:7px;opacity:0;animation:plReveal .7s ease .75s forwards}
+.pl-bo{width:158px;height:2px;background:rgba(201,164,72,.08);border-radius:2px;margin-top:34px;overflow:hidden;opacity:0;animation:plReveal .7s ease 1.05s forwards}
+.pl-bi{height:100%;background:var(--gg);width:0;animation:barFill 2.2s ease 1.35s forwards}
+.pl-qt{font-family:'Cormorant Garamond',serif;font-size:.92rem;font-style:italic;color:var(--td);margin-top:20px;opacity:0;animation:plReveal .7s ease 1.55s forwards}
 
-            /* Surfaces */
-            --surface-1: #0c1020;
-            --surface-2: #111630;
-            --surface-3: #161c3a;
-            --surface-card: linear-gradient(155deg, #131838 0%, #1a2148 100%);
-            --surface-card-hover: linear-gradient(155deg, #181e42 0%, #202852 100%);
+/* ============================================================
+   NAVIGATION
+============================================================ */
+.nav{position:fixed;top:0;left:0;width:100%;z-index:90000;padding:19px 0;transition:var(--tr);background:transparent}
+.nav.stk{background:rgba(5,7,15,.93);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);padding:12px 0;box-shadow:0 3px 24px rgba(0,0,0,.5);border-bottom:1px solid var(--b1)}
+.nw{max-width:1310px;margin:0 auto;padding:0 38px;display:flex;justify-content:space-between;align-items:center}
+.nbrand{display:flex;flex-direction:column;gap:1px}
+.nbn{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--g3);letter-spacing:.5px;line-height:1.2}
+.nbs{font-size:.54rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--td)}
+.nlinks{display:flex;align-items:center;gap:28px}
+.nlinks a{font-size:.74rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--tm);position:relative;padding:5px 0}
+.nlinks a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--g3);transition:width .32s ease}
+.nlinks a:hover,.nlinks a.on{color:var(--g3)}
+.nlinks a:hover::after,.nlinks a.on::after{width:100%}
+.ncta{font-size:.68rem!important;font-weight:700!important;color:var(--n1)!important;background:var(--gg);padding:10px 21px;border-radius:4px}
+.ncta:hover{transform:translateY(-2px);box-shadow:var(--gmd)}
+.ncta::after{display:none!important}
+.burg{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:90001;padding:4px}
+.burg span{width:21px;height:2px;background:var(--g3);transition:var(--tr);display:block}
+.burg.on span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burg.on span:nth-child(2){opacity:0}
+.burg.on span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
-            /* Text */
-            --text-white: #ffffff;
-            --text-cream: #f5f0e4;
-            --text-light: #ddd8cc;
-            --text-muted: #8a869a;
-            --text-dim: #5e5a6e;
+/* ============================================================
+   LAYOUT
+============================================================ */
+.sec{padding:125px 0;position:relative;overflow:hidden}
+.bx{max-width:1190px;margin:0 auto;padding:0 38px}
+.sln{position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--g5),transparent)}
+.eyb{font-size:.68rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--g3);margin-bottom:15px;display:inline-flex;align-items:center;gap:11px}
+.eyb::before{content:'';width:30px;height:1.5px;background:var(--g3)}
+.hdg{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3.1rem);font-weight:700;color:var(--tw);line-height:1.18;margin-bottom:19px}
+.hdg em{color:var(--g3);font-style:normal}
+.stx{font-size:clamp(.86rem,1.4vw,1rem);font-weight:300;color:var(--tm);line-height:1.9;max-width:670px}
+.gl{width:48px;height:2px;background:var(--gg);margin:23px 0}
+.glc{width:48px;height:2px;background:var(--gg);margin:23px auto}
+.ctr{text-align:center}
+.ctr .eyb{justify-content:center}
+.ctr .eyb::before{display:none}
+.ctr .stx{margin:0 auto;text-align:center}
 
-            /* Borders */
-            --border-1: rgba(200, 164, 72, 0.08);
-            --border-2: rgba(200, 164, 72, 0.15);
-            --border-3: rgba(200, 164, 72, 0.28);
-            --border-4: rgba(200, 164, 72, 0.45);
+/* ============================================================
+   BUTTONS
+============================================================ */
+.btn{display:inline-flex;align-items:center;gap:9px;font-size:.74rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;border:none;border-radius:4px;cursor:pointer;transition:var(--tr);position:relative;overflow:hidden}
+.btn-g{color:var(--n1);background:var(--gg)}
+.btn-g::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);transition:left .52s ease}
+.btn-g:hover::after{left:100%}
+.btn-g:hover{transform:translateY(-3px);box-shadow:var(--glg)}
+.btn-o{color:var(--g3);background:transparent;border:1.5px solid var(--g3)}
+.btn-o:hover{background:var(--g3);color:var(--n1);transform:translateY(-3px);box-shadow:var(--glg)}
 
-            /* Glows */
-            --glow-gold-sm: 0 2px 20px rgba(200, 164, 72, 0.08);
-            --glow-gold-md: 0 6px 35px rgba(200, 164, 72, 0.14);
-            --glow-gold-lg: 0 12px 50px rgba(200, 164, 72, 0.2);
-            --glow-gold-xl: 0 20px 70px rgba(200, 164, 72, 0.25);
+/* ============================================================
+   HERO
+============================================================ */
+.hero{min-height:100vh;background:var(--gh);display:flex;align-items:center;position:relative;overflow:hidden}
+.hbg{position:absolute;inset:0;pointer-events:none;z-index:1}
+.horb{position:absolute;border-radius:50%;filter:blur(80px)}
+.horb-a{width:540px;height:540px;top:-11%;right:-7%;background:radial-gradient(circle,rgba(201,164,72,.034),transparent 70%);animation:fl 10s ease-in-out infinite}
+.horb-b{width:370px;height:370px;bottom:-8%;left:-4%;background:radial-gradient(circle,rgba(18,24,48,.5),transparent 70%);animation:fl 13s ease-in-out infinite reverse}
+.hmsh{position:absolute;inset:0;background-image:linear-gradient(rgba(201,164,72,.011) 1px,transparent 1px),linear-gradient(90deg,rgba(201,164,72,.011) 1px,transparent 1px);background-size:64px 64px}
+.hstr{position:absolute;width:2.5px;height:2.5px;background:var(--g3);border-radius:50%;animation:tw 4s ease-in-out infinite}
+.hin{position:relative;z-index:10;max-width:1290px;margin:0 auto;padding:0 38px;display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center}
+.htxt{padding-top:42px}
+.hey{font-size:.64rem;font-weight:600;letter-spacing:5px;text-transform:uppercase;color:var(--g3);margin-bottom:24px;display:flex;align-items:center;gap:13px;opacity:0;animation:fadeUp .8s var(--ease) .5s forwards}
+.hey::before{content:'';width:36px;height:1.5px;background:var(--g3)}
+.hh1{font-family:'Playfair Display',serif;font-size:clamp(2.1rem,4.8vw,3.7rem);font-weight:800;color:var(--tw);line-height:1.12;margin-bottom:24px;opacity:0;animation:fadeUp .8s var(--ease) .8s forwards}
+.hh1 em{color:var(--g3);font-style:normal}
+.hp{font-size:clamp(.85rem,1.4vw,1rem);font-weight:300;color:var(--tm);line-height:1.9;margin-bottom:15px;opacity:0;animation:fadeUp .8s var(--ease) 1.1s forwards}
+.hp2{font-size:clamp(.78rem,1.2vw,.92rem);font-weight:300;color:var(--td);line-height:1.9;margin-bottom:34px;opacity:0;animation:fadeUp .8s var(--ease) 1.3s forwards}
+.hbtns{display:flex;gap:15px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s var(--ease) 1.5s forwards}
+.htrust{display:flex;align-items:center;gap:18px;margin-top:40px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s var(--ease) 1.8s forwards}
+.tbdg{display:flex;align-items:center;gap:7px;font-size:.68rem;font-weight:500;color:var(--tm)}
+.tbdg i{color:var(--g3);font-size:.8rem}
+.tsep{width:1px;height:15px;background:var(--b3)}
+.himg{display:flex;justify-content:center;align-items:center;position:relative;opacity:0;animation:scUp 1s var(--ease) 1.2s forwards}
+.hfrm{position:relative;width:375px;height:468px}
+.hfb{position:absolute;inset:-15px;border:1.5px solid var(--b2);border-radius:6px;transition:var(--tr)}
+.hfrm:hover .hfb{border-color:var(--g3);box-shadow:var(--gsm)}
+.hfg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:310px;height:310px;border-radius:50%;background:radial-gradient(circle,rgba(201,164,72,.048),transparent 70%);z-index:0}
+.hph{width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:var(--sxl);position:relative;z-index:1;transition:var(--tr)}
+.hfrm:hover .hph{transform:scale(1.014)}
+.htag{position:absolute;bottom:-19px;right:-19px;background:var(--gg);padding:12px 22px;border-radius:4px;box-shadow:var(--smd);z-index:5;animation:fl 5s ease-in-out infinite}
+.htag span{font-size:.58rem;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--n1)}
+.htag2{position:absolute;top:-13px;left:-13px;background:var(--s2);border:1px solid var(--b2);padding:10px 15px;border-radius:4px;z-index:5;animation:fl 6s ease-in-out infinite reverse}
+.htag2 i{color:var(--g3);font-size:.9rem;display:block;margin-bottom:2px}
+.htag2 span{font-size:.56rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--tl);display:block}
+.hscr{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:10;display:flex;flex-direction:column;align-items:center;gap:7px;opacity:0;animation:fadeIn 1s ease 2.5s forwards}
+.hscr span{font-size:.56rem;letter-spacing:3px;text-transform:uppercase;color:var(--td)}
+.hsb{width:1px;height:30px;background:linear-gradient(to bottom,var(--g3),transparent);animation:pl 2s ease-in-out infinite}
 
-            /* Shadows */
-            --shadow-sm: 0 2px 12px rgba(0,0,0,0.2);
-            --shadow-md: 0 6px 30px rgba(0,0,0,0.35);
-            --shadow-lg: 0 14px 50px rgba(0,0,0,0.5);
-            --shadow-xl: 0 24px 70px rgba(0,0,0,0.6);
+/* ============================================================
+   AUTHORITY
+============================================================ */
+.auth{background:var(--s1)}
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.aqt{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:500;color:var(--tc);line-height:1.6;font-style:italic;padding-left:24px;border-left:2.5px solid var(--g3);margin-bottom:24px}
+.ap{font-size:clamp(.78rem,1.2vw,.9rem);font-weight:300;color:var(--tm);line-height:1.9;margin-bottom:14px}
+.astats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.astat{text-align:center;padding:24px 12px;border:1px solid var(--b1);border-radius:6px;transition:var(--tr);background:rgba(201,164,72,.014)}
+.astat:hover{border-color:var(--g3);box-shadow:var(--gsm);transform:translateY(-4px)}
+.asi{font-size:1.25rem;color:var(--g3);margin-bottom:7px}
+.asn{font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:700;color:var(--g3);line-height:1}
+.asl{font-size:.6rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--tm);margin-top:5px}
+.acard{background:var(--sc);border:1px solid var(--b1);border-radius:6px;padding:36px;box-shadow:var(--smd)}
+.ach{display:flex;align-items:center;gap:13px;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--b1)}
+.acav{width:50px;height:50px;border-radius:50%;object-fit:cover;border:2.5px solid var(--g3)}
+.acnm{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--tw)}
+.acrl{font-size:.64rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--g3)}
+.acqt{font-family:'Cormorant Garamond',serif;font-size:1.08rem;color:var(--tc);line-height:1.7;font-style:italic;margin-bottom:20px}
+.acfl li{display:flex;align-items:flex-start;gap:10px;padding:11px 0;border-bottom:1px solid var(--b1);font-size:clamp(.78rem,1.2vw,.9rem);color:var(--tl);line-height:1.6}
+.acfl li:last-child{border-bottom:none}
+.acfl li i{color:var(--g3);font-size:.7rem;margin-top:5px;flex-shrink:0}
 
-            /* Gradients */
-            --grad-gold: linear-gradient(135deg, #c8a448, #dfc068, #b89438);
-            --grad-gold-rev: linear-gradient(135deg, #b89438, #c8a448, #dfc068);
-            --grad-hero: linear-gradient(150deg, #060810 0%, #0e1220 35%, #121830 65%, #0a1028 100%);
+/* ============================================================
+   DIFFERENTIATORS
+============================================================ */
+.diffs{background:var(--n1)}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:50px}
+.dc{background:var(--sc);border:1px solid var(--b1);border-radius:6px;padding:34px;transition:var(--tr);position:relative;overflow:hidden}
+.dc::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gg);transition:height .5s ease}
+.dc:hover::before{height:100%}
+.dc:hover{border-color:var(--b2);transform:translateY(-5px);box-shadow:var(--gsm)}
+.dci{width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:rgba(201,164,72,.08);border-radius:50%;margin-bottom:15px}
+.dci i{color:var(--g3);font-size:1.02rem}
+.dc h3{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:600;color:var(--tw);margin-bottom:9px}
+.dc p{font-size:clamp(.78rem,1.2vw,.88rem);font-weight:300;color:var(--tm);line-height:1.8}
+.dcw{grid-column:1/-1}
 
-            /* Motion */
-            --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-            --trans: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/* ============================================================
+   SERVICES
+============================================================ */
+.svcs{background:var(--s1)}
+.svc{margin-bottom:24px;background:var(--s2);border:1px solid var(--b1);border-radius:6px;overflow:hidden;transition:var(--tr)}
+.svc:hover{border-color:var(--b2)}
+.svc.opn{border-color:var(--g3);box-shadow:var(--gsm)}
+.svch{padding:30px 40px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:var(--tr);user-select:none}
+.svch:hover{background:rgba(201,164,72,.013)}
+.svchl{display:flex;align-items:center;gap:18px}
+.svcn{font-family:'Playfair Display',serif;font-size:2.3rem;font-weight:800;color:rgba(201,164,72,.11);line-height:1;min-width:50px}
+.svct{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--tw);margin-bottom:2px}
+.svcst{font-size:.74rem;color:var(--g3);letter-spacing:.5px}
+.svctog{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--b3);border-radius:50%;flex-shrink:0;transition:var(--tr)}
+.svctog i{color:var(--g3);font-size:.8rem;transition:transform .4s ease}
+.svc.opn .svctog{background:var(--g3);border-color:var(--g3)}
+.svc.opn .svctog i{color:var(--n1);transform:rotate(180deg)}
+.svcbd{max-height:0;overflow:hidden;transition:max-height .6s ease}
+.svcbi{padding:0 40px 40px}
+.svccols{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.svcbd h4{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--g3);margin-bottom:9px;margin-top:18px}
+.svcbd h4:first-child{margin-top:0}
+.svcbd p{font-size:clamp(.78rem,1.2vw,.88rem);font-weight:300;color:var(--tm);line-height:1.8;margin-bottom:9px}
+.svcli li{display:flex;align-items:flex-start;gap:9px;padding:7px 0;font-size:clamp(.78rem,1.2vw,.88rem);color:var(--tl);line-height:1.7;border-bottom:1px solid var(--b1)}
+.svcli li:last-child{border-bottom:none}
+.svcli li i{color:var(--g3);font-size:.58rem;margin-top:6px;flex-shrink:0}
+.svccta{margin-top:24px;padding-top:24px;border-top:1px solid var(--b1);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.svcctal{font-size:.78rem;color:var(--tm)}
+.svcctem{font-size:.78rem;font-weight:500;color:var(--g3)}
 
-            /* Typography Scale */
-            --fs-hero: clamp(2.2rem, 5vw, 3.8rem);
-            --fs-h2: clamp(1.8rem, 4vw, 3.2rem);
-            --fs-h3: clamp(1.2rem, 2.5vw, 1.5rem);
-            --fs-body: clamp(0.88rem, 1.5vw, 1.02rem);
-            --fs-small: clamp(0.75rem, 1.2vw, 0.88rem);
-            --fs-tiny: clamp(0.62rem, 1vw, 0.72rem);
-        }
+/* ============================================================
+   PROCESS
+============================================================ */
+.process{background:var(--n1)}
+.prrow{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px;position:relative}
+.prrow::before{content:'';position:absolute;top:38px;left:12%;width:76%;height:1px;background:linear-gradient(90deg,transparent,var(--g5),var(--g5),transparent)}
+.prstep{text-align:center;padding:30px 16px;position:relative}
+.prc{width:58px;height:58px;display:flex;align-items:center;justify-content:center;background:var(--s2);border:2px solid var(--g3);border-radius:50%;margin:0 auto 18px;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--g3);transition:var(--tr);position:relative;z-index:2}
+.prstep:hover .prc{background:var(--g3);color:var(--n1);box-shadow:var(--gmd);transform:scale(1.1)}
+.prstep h3{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;color:var(--tw);margin-bottom:9px}
+.prstep p{font-size:.78rem;font-weight:300;color:var(--tm);line-height:1.7}
 
-        /* ================================================================
-           KEYFRAMES
-        ================================================================ */
-        @keyframes preloaderReveal {
-            from { opacity: 0; transform: translateY(25px) scale(0.96); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        @keyframes barLoad {
-            0% { width: 0; }
-            40% { width: 45%; }
-            70% { width: 75%; }
-            100% { width: 100%; }
-        }
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(35px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes scaleUp {
-            from { opacity: 0; transform: scale(0.88); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 0.35; }
-            50% { opacity: 1; }
-        }
-        @keyframes shimmer {
-            0% { left: -100%; }
-            100% { left: 100%; }
-        }
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.15; transform: scale(1); }
-            50% { opacity: 0.7; transform: scale(1.4); }
-        }
-        @keyframes borderPulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(200,164,72,0.3); }
-            50% { box-shadow: 0 0 0 8px rgba(200,164,72,0); }
-        }
-        @keyframes slideRight {
-            from { width: 0; }
-            to { width: 55px; }
-        }
-        @keyframes rotateIn {
-            from { opacity: 0; transform: rotate(-10deg) scale(0.9); }
-            to { opacity: 1; transform: rotate(0deg) scale(1); }
-        }
+/* ============================================================
+   EMAIL PHILOSOPHY
+============================================================ */
+.emph{background:var(--s1)}
+.emgrid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.emrs li{display:flex;align-items:flex-start;gap:13px;padding:17px 0;border-bottom:1px solid var(--b1)}
+.emrs li:last-child{border-bottom:none}
+.eri{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:rgba(201,164,72,.08);border-radius:50%;flex-shrink:0}
+.eri i{color:var(--g3);font-size:.86rem}
+.ert{font-size:.88rem;font-weight:600;color:var(--tw);margin-bottom:2px}
+.erp{font-size:.78rem;font-weight:300;color:var(--tm);line-height:1.7}
+.evcard{background:var(--sc);border:1px solid var(--b1);border-radius:6px;padding:45px;text-align:center}
+.evico{width:72px;height:72px;display:flex;align-items:center;justify-content:center;background:rgba(201,164,72,.08);border:1px solid var(--b2);border-radius:50%;margin:0 auto 20px}
+.evico i{font-size:1.8rem;color:var(--g3)}
+.evt{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--tw);margin-bottom:9px}
+.evp{font-size:clamp(.78rem,1.2vw,.88rem);font-weight:300;color:var(--tm);line-height:1.8;margin-bottom:24px}
+.evmini{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.evbx{background:rgba(201,164,72,.03);border:1px solid var(--b1);border-radius:5px;padding:13px;text-align:center;transition:var(--tr)}
+.evbx:hover{border-color:var(--b2);background:rgba(201,164,72,.06)}
+.evbx i{color:var(--g3);font-size:.98rem;margin-bottom:5px}
+.evbx p{font-size:.6rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--tl)}
 
-        /* ================================================================
-           GLOBAL RESET
-        ================================================================ */
-        *, *::before, *::after {
-            margin: 0; padding: 0; box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-            overflow-x: hidden;
-        }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--navy-1);
-            color: var(--text-light);
-            line-height: 1.8;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        ::selection { background: var(--gold-3); color: var(--navy-1); }
-        ::-moz-selection { background: var(--gold-3); color: var(--navy-1); }
-        img { max-width: 100%; height: auto; display: block; }
-        a { text-decoration: none; color: inherit; transition: var(--trans); }
-        ul, ol { list-style: none; }
-        button { font-family: inherit; }
+/* ============================================================
+   FEATURED AUTHORS
+============================================================ */
+.fauth{background:var(--n1)}
+.ablock{margin-bottom:62px}
+.ablock:last-of-type{margin-bottom:0}
+.acard{background:var(--sc);border:1px solid var(--b1);border-radius:6px;overflow:hidden;transition:var(--tr)}
+.acard:hover{border-color:var(--b2);box-shadow:var(--gsm)}
+.acinn{display:grid;grid-template-columns:300px 1fr}
+.acleft{padding:40px 30px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:1px solid var(--b1);background:rgba(0,0,0,.1);text-align:center}
+.acavi{width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--g3);margin-bottom:13px;transition:var(--tr);cursor:pointer}
+.acavi:hover{transform:scale(1.08);box-shadow:var(--gmd);animation:bpulse 2s ease infinite}
+.acname{font-family:'Playfair Display',serif;font-size:1.12rem;font-weight:700;color:var(--tw);margin-bottom:6px}
+.acem{display:inline-flex;align-items:center;gap:5px;font-size:.66rem;color:var(--g3);margin-bottom:20px;word-break:break-all;transition:var(--tr)}
+.acem:hover{color:var(--g1);text-decoration:underline}
+.acbkw{width:180px;margin-bottom:15px}
+.acbk{width:100%;height:auto;border-radius:4px;box-shadow:var(--slg);transition:var(--tr);cursor:pointer}
+.acbk:hover{transform:scale(1.06) translateY(-5px);box-shadow:var(--sxl)}
+.acamz{display:inline-flex;align-items:center;gap:7px;padding:9px 19px;background:#FF9900;color:#111;border-radius:4px;font-size:.64rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:var(--tr);margin-top:3px}
+.acamz:hover{background:#FFB84D;transform:translateY(-3px);box-shadow:0 5px 18px rgba(255,153,0,.3)}
+.acamz i{font-size:.92rem}
+.acright{padding:40px 46px}
+.acgen{font-size:.64rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--g3);margin-bottom:9px}
+.acbt{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--tw);margin-bottom:11px}
+.acabout{font-size:clamp(.78rem,1.2vw,.9rem);font-weight:300;color:var(--tm);line-height:1.8;margin-bottom:15px}
+.acml{font-size:.68rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--g3);margin-bottom:6px;margin-top:18px}
+.acmd{font-size:clamp(.78rem,1.2vw,.9rem);font-weight:300;color:var(--tm);line-height:1.8}
+.actesti{margin-top:20px;padding:20px 24px;background:rgba(201,164,72,.03);border-left:3px solid var(--g3);border-radius:0 6px 6px 0}
+.actq{font-family:'Cormorant Garamond',serif;font-size:1.02rem;font-weight:500;color:var(--tc);line-height:1.7;font-style:italic;margin-bottom:7px}
+.actn{font-size:.74rem;font-weight:600;color:var(--g3)}
 
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 7px; }
-        ::-webkit-scrollbar-track { background: var(--navy-1); }
-        ::-webkit-scrollbar-thumb { background: var(--gold-5); border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--gold-3); }
+/* ============================================================
+   ABOUT
+============================================================ */
+.about{background:var(--s1)}
+.abtop{display:grid;grid-template-columns:.88fr 1.12fr;gap:72px;align-items:center;margin-bottom:82px}
+.abiw{position:relative}
+.abim{width:100%;max-width:415px;border-radius:6px;box-shadow:var(--sxl);border:1px solid var(--b1)}
+.abid{position:absolute;bottom:-15px;right:-15px;width:125px;height:125px;border:2px solid var(--g3);border-radius:6px;z-index:-1}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.pcard{background:var(--s2);border:1px solid var(--b1);border-radius:6px;padding:34px 24px;text-align:center;transition:var(--tr);position:relative;overflow:hidden}
+.pcard::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--gg);transform:scaleX(0);transition:transform .5s ease}
+.pcard:hover::after{transform:scaleX(1)}
+.pcard:hover{transform:translateY(-5px);border-color:var(--b2);box-shadow:var(--gsm)}
+.pcico{width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:rgba(201,164,72,.08);border:1px solid var(--b2);border-radius:50%;margin:0 auto 15px}
+.pcico i{font-size:1.12rem;color:var(--g3)}
+.pcard h3{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;color:var(--tw);margin-bottom:9px}
+.pcard p{font-size:.78rem;font-weight:300;color:var(--tm);line-height:1.7}
+.cklist{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:30px}
+.ckitem{display:flex;align-items:flex-start;gap:9px;padding:13px 15px;background:rgba(201,164,72,.018);border:1px solid var(--b1);border-radius:5px;transition:var(--tr)}
+.ckitem:hover{border-color:var(--b2);background:rgba(201,164,72,.038)}
+.ckitem i{color:var(--g3);font-size:.7rem;margin-top:4px;flex-shrink:0}
+.ckitem p{font-size:.78rem;font-weight:400;color:var(--tl);line-height:1.6}
 
-        /* ================================================================
-           PRELOADER
-        ================================================================ */
-        .preloader {
-            position: fixed; inset: 0;
-            background: var(--navy-1);
-            display: flex; flex-direction: column;
-            justify-content: center; align-items: center;
-            z-index: 999999;
-            transition: opacity 0.9s ease, visibility 0.9s ease;
-        }
-        .preloader.done { opacity: 0; visibility: hidden; pointer-events: none; }
-        .pl-line { width: 50px; height: 1px; background: var(--grad-gold); margin-bottom: 28px; opacity: 0; animation: preloaderReveal 0.7s ease 0.2s forwards; }
-        .pl-name { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 700; color: var(--gold-3); letter-spacing: 1px; opacity: 0; animation: preloaderReveal 0.7s ease 0.4s forwards; }
-        .pl-role { font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; color: var(--text-muted); margin-top: 8px; opacity: 0; animation: preloaderReveal 0.7s ease 0.7s forwards; }
-        .pl-bar-outer { width: 160px; height: 2px; background: rgba(200,164,72,0.08); border-radius: 2px; margin-top: 35px; overflow: hidden; opacity: 0; animation: preloaderReveal 0.7s ease 1s forwards; }
-        .pl-bar-inner { height: 100%; background: var(--grad-gold); border-radius: 2px; width: 0; animation: barLoad 2.2s ease 1.3s forwards; }
-        .pl-quote { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-style: italic; color: var(--text-dim); margin-top: 22px; opacity: 0; animation: preloaderReveal 0.7s ease 1.5s forwards; }
+/* ============================================================
+   CTA BANNER
+============================================================ */
+.ctaban{background:linear-gradient(150deg,#111628,#0e3258);padding:105px 0;text-align:center;position:relative;overflow:hidden}
+.ctaban .sln{top:0}
+.ctaban::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--g5),transparent)}
+.ctaorb{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(201,164,72,.034),transparent 70%);pointer-events:none}
+.ctain{position:relative;z-index:2}
+.ctat{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.65rem);font-weight:800;color:var(--tw);margin-bottom:17px;line-height:1.2}
+.ctat em{color:var(--g3);font-style:normal}
+.ctap{font-size:clamp(.85rem,1.4vw,1rem);font-weight:300;color:var(--tm);max-width:660px;margin:0 auto 30px;line-height:1.8}
 
-        /* ================================================================
-           NAVIGATION
-        ================================================================ */
-        .nav {
-            position: fixed; top: 0; left: 0; width: 100%;
-            z-index: 90000; padding: 20px 0;
-            transition: var(--trans); background: transparent;
-        }
-        .nav.stuck {
-            background: rgba(6,8,16,0.94);
-            backdrop-filter: blur(22px);
-            -webkit-backdrop-filter: blur(22px);
-            padding: 13px 0;
-            box-shadow: 0 3px 25px rgba(0,0,0,0.5);
-            border-bottom: 1px solid var(--border-1);
-        }
-        .nav-wrap {
-            max-width: 1320px; margin: 0 auto; padding: 0 40px;
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .nav-brand { display: flex; flex-direction: column; gap: 1px; }
-        .nav-brand-name { font-family: 'Playfair Display', serif; font-size: 1.32rem; font-weight: 700; color: var(--gold-3); letter-spacing: 0.5px; line-height: 1.2; }
-        .nav-brand-sub { font-family: 'Inter', sans-serif; font-size: 0.55rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); }
-        .nav-links { display: flex; align-items: center; gap: 30px; }
-        .nav-links a {
-            font-family: 'Inter', sans-serif; font-size: 0.76rem; font-weight: 500;
-            letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted);
-            position: relative; padding: 5px 0;
-        }
-        .nav-links a::after {
-            content: ''; position: absolute; bottom: 0; left: 0;
-            width: 0; height: 1.5px; background: var(--gold-3);
-            transition: width 0.35s ease;
-        }
-        .nav-links a:hover, .nav-links a.on { color: var(--gold-3); }
-        .nav-links a:hover::after, .nav-links a.on::after { width: 100%; }
-        .nav-inquiry {
-            font-size: 0.7rem !important; font-weight: 700 !important;
-            color: var(--navy-1) !important; background: var(--grad-gold);
-            padding: 10px 22px; border-radius: 4px;
-        }
-        .nav-inquiry:hover { transform: translateY(-2px); box-shadow: var(--glow-gold-md); }
-        .nav-inquiry::after { display: none !important; }
-        .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 90001; padding: 4px; }
-        .burger span { width: 22px; height: 2px; background: var(--gold-3); transition: var(--trans); display: block; }
-        .burger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-        .burger.active span:nth-child(2) { opacity: 0; }
-        .burger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+/* ============================================================
+   INQUIRY
+============================================================ */
+.inq{background:var(--n1)}
+.inqlay{display:grid;grid-template-columns:1fr 1.3fr;gap:72px;align-items:flex-start}
+.inqinfo{position:sticky;top:112px}
+.inqcard{background:var(--sc);border:1px solid var(--b1);border-radius:6px;padding:30px;margin-top:24px}
+.inqr{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid var(--b1)}
+.inqr:last-child{border-bottom:none}
+.inqri{width:35px;height:35px;display:flex;align-items:center;justify-content:center;background:rgba(201,164,72,.08);border-radius:50%;flex-shrink:0}
+.inqri i{color:var(--g3);font-size:.8rem}
+.inqr h4{font-size:.78rem;font-weight:600;color:var(--tw);margin-bottom:1px}
+.inqr p{font-size:.74rem;font-weight:300;color:var(--tm);line-height:1.5}
+.inqr a{color:var(--g3)}
+.inqr a:hover{text-decoration:underline}
+.inqim{width:100%;border-radius:6px;margin-top:24px;box-shadow:var(--smd);border:1px solid var(--b1)}
+.fw{background:var(--sc);border:1px solid var(--b1);border-radius:6px;padding:46px}
+.fwt{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--tw);margin-bottom:6px}
+.fwst{font-size:.78rem;font-weight:300;color:var(--tm);margin-bottom:28px;line-height:1.7}
+.fg{margin-bottom:19px}
+.fl{display:block;font-size:.68rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--tl);margin-bottom:6px}
+.fl .rq{color:var(--g3)}
+.fi,.fsl,.fta{width:100%;padding:12px 14px;font-family:'Inter',sans-serif;font-size:clamp(.78rem,1.2vw,.88rem);color:var(--tl);background:rgba(255,255,255,.018);border:1px solid var(--b1);border-radius:4px;outline:none;transition:var(--tr)}
+.fi:focus,.fsl:focus,.fta:focus{border-color:var(--g3);box-shadow:0 0 0 3px rgba(201,164,72,.1);background:rgba(255,255,255,.032)}
+.fi::placeholder,.fta::placeholder{color:var(--td);font-size:.78rem}
+.fsl{cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='%23c9a448' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.fsl option{background:var(--s2);color:var(--tl)}
+.fta{min-height:100px;resize:vertical}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.fcg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fci{display:flex;align-items:center;gap:8px;padding:9px 12px;background:rgba(255,255,255,.01);border:1px solid var(--b1);border-radius:4px;cursor:pointer;transition:var(--tr)}
+.fci:hover{border-color:var(--b2);background:rgba(201,164,72,.028)}
+.fci input[type=checkbox]{accent-color:var(--g3);width:13px;height:13px;cursor:pointer}
+.fci label{font-size:.74rem;color:var(--tl);cursor:pointer}
+.fsub{width:100%;padding:16px;font-family:'Inter',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--n1);background:var(--gg);border:none;border-radius:4px;cursor:pointer;transition:var(--tr);margin-top:9px;position:relative;overflow:hidden}
+.fsub::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent);transition:left .52s ease}
+.fsub:hover::after{left:100%}
+.fsub:hover{transform:translateY(-2px);box-shadow:var(--glg)}
+.fnote{margin-top:15px;padding:12px 15px;background:rgba(201,164,72,.028);border:1px solid var(--b1);border-radius:4px}
+.fnote p{font-size:.68rem;color:var(--tm);line-height:1.7}
+.fnote i{color:var(--g3);margin-right:3px}
 
-        /* ================================================================
-           LAYOUT HELPERS
-        ================================================================ */
-        .sec { padding: 130px 0; position: relative; overflow: hidden; }
-        .box { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-        .sec-line { position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-5), transparent); }
-        .eyebrow {
-            font-family: 'Inter', sans-serif; font-size: var(--fs-tiny); font-weight: 600;
-            letter-spacing: 4px; text-transform: uppercase; color: var(--gold-3);
-            margin-bottom: 16px; display: inline-flex; align-items: center; gap: 12px;
-        }
-        .eyebrow::before { content: ''; width: 32px; height: 1.5px; background: var(--gold-3); }
-        .heading {
-            font-family: 'Playfair Display', serif; font-size: var(--fs-h2);
-            font-weight: 700; color: var(--text-white); line-height: 1.18; margin-bottom: 20px;
-        }
-        .heading em { color: var(--gold-3); font-style: normal; }
-        .subtext {
-            font-family: 'Inter', sans-serif; font-size: var(--fs-body); font-weight: 300;
-            color: var(--text-muted); line-height: 1.9; max-width: 680px;
-        }
-        .g-line { width: 50px; height: 2px; background: var(--grad-gold); margin: 25px 0; }
-        .g-line-c { width: 50px; height: 2px; background: var(--grad-gold); margin: 25px auto; }
-        .centered { text-align: center; }
-        .centered .eyebrow { justify-content: center; }
-        .centered .eyebrow::before { display: none; }
-        .centered .subtext { margin-left: auto; margin-right: auto; text-align: center; }
+/* ============================================================
+   FOOTER
+============================================================ */
+.ftr{background:#03050d;padding:72px 0 20px;position:relative}
+.ftr .sln{top:0}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.fbn{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--g3);margin-bottom:2px}
+.fbs{font-size:.55rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--td);margin-bottom:15px}
+.ftxt{font-size:.78rem;font-weight:300;color:var(--tm);line-height:1.8;margin-bottom:15px}
+.fem{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:500;color:var(--g3)}
+.fem:hover{color:var(--g1)}
+.fct{font-size:.64rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--g3);margin-bottom:18px}
+.flks li{margin-bottom:9px}
+.flks a{font-size:.78rem;color:var(--tm)}
+.flks a:hover{color:var(--g3);padding-left:3px}
+.fbot{padding-top:20px;border-top:1px solid var(--b1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:9px}
+.fcopy{font-size:.68rem;color:var(--td)}
+.fnts{font-size:.64rem;color:var(--td);max-width:450px;text-align:right;line-height:1.6}
+.fnts i{color:var(--g3);margin-right:2px}
 
-        /* ================================================================
-           BUTTONS
-        ================================================================ */
-        .btn {
-            display: inline-flex; align-items: center; gap: 10px;
-            font-family: 'Inter', sans-serif; font-size: 0.76rem; font-weight: 700;
-            letter-spacing: 2px; text-transform: uppercase;
-            padding: 16px 34px; border: none; border-radius: 4px;
-            cursor: pointer; transition: var(--trans); position: relative; overflow: hidden;
-        }
-        .btn-gold { color: var(--navy-1); background: var(--grad-gold); }
-        .btn-gold::after {
-            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
-            transition: left 0.55s ease;
-        }
-        .btn-gold:hover::after { left: 100%; }
-        .btn-gold:hover { transform: translateY(-3px); box-shadow: var(--glow-gold-lg); }
-        .btn-outline {
-            color: var(--gold-3); background: transparent;
-            border: 1.5px solid var(--gold-3);
-        }
-        .btn-outline:hover { background: var(--gold-3); color: var(--navy-1); transform: translateY(-3px); box-shadow: var(--glow-gold-lg); }
+/* BACK TO TOP */
+.btt{position:fixed;bottom:24px;right:24px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--g3);color:var(--n1);border-radius:4px;border:none;cursor:pointer;opacity:0;visibility:hidden;transition:var(--tr);z-index:9998;font-size:.88rem}
+.btt.vis{opacity:1;visibility:visible}
+.btt:hover{transform:translateY(-3px);box-shadow:var(--gmd)}
 
-        /* ================================================================
-           HERO
-        ================================================================ */
-        .hero {
-            min-height: 100vh; background: var(--grad-hero);
-            display: flex; align-items: center; position: relative; overflow: hidden;
-        }
-        .hero-bg { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
-        .hero-orb {
-            position: absolute; border-radius: 50%; filter: blur(80px);
-        }
-        .hero-orb-a { width: 550px; height: 550px; top: -12%; right: -8%; background: radial-gradient(circle, rgba(200,164,72,0.035), transparent 70%); animation: float 10s ease-in-out infinite; }
-        .hero-orb-b { width: 380px; height: 380px; bottom: -8%; left: -4%; background: radial-gradient(circle, rgba(18,24,48,0.5), transparent 70%); animation: float 13s ease-in-out infinite reverse; }
-        .hero-mesh {
-            position: absolute; inset: 0;
-            background-image: linear-gradient(rgba(200,164,72,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(200,164,72,0.012) 1px, transparent 1px);
-            background-size: 65px 65px;
-        }
-        .hero-star { position: absolute; width: 2.5px; height: 2.5px; background: var(--gold-3); border-radius: 50%; animation: twinkle 4s ease-in-out infinite; }
-
-        .hero-inner {
-            position: relative; z-index: 10; max-width: 1300px; margin: 0 auto; padding: 0 40px;
-            display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 75px; align-items: center;
-        }
-        .hero-text { padding-top: 45px; }
-        .hero-eyebrow {
-            font-family: 'Inter', sans-serif; font-size: 0.66rem; font-weight: 600;
-            letter-spacing: 5px; text-transform: uppercase; color: var(--gold-3);
-            margin-bottom: 26px; display: flex; align-items: center; gap: 14px;
-            opacity: 0; animation: fadeUp 0.8s var(--ease) 0.5s forwards;
-        }
-        .hero-eyebrow::before { content: ''; width: 38px; height: 1.5px; background: var(--gold-3); }
-        .hero-h1 {
-            font-family: 'Playfair Display', serif; font-size: var(--fs-hero);
-            font-weight: 800; color: var(--text-white); line-height: 1.12; margin-bottom: 26px;
-            opacity: 0; animation: fadeUp 0.8s var(--ease) 0.8s forwards;
-        }
-        .hero-h1 em { color: var(--gold-3); font-style: normal; }
-        .hero-p {
-            font-size: var(--fs-body); font-weight: 300; color: var(--text-muted);
-            line-height: 1.9; margin-bottom: 16px;
-            opacity: 0; animation: fadeUp 0.8s var(--ease) 1.1s forwards;
-        }
-        .hero-p2 {
-            font-size: var(--fs-small); font-weight: 300; color: var(--text-dim);
-            line-height: 1.9; margin-bottom: 36px;
-            opacity: 0; animation: fadeUp 0.8s var(--ease) 1.3s forwards;
-        }
-        .hero-btns {
-            display: flex; gap: 16px; flex-wrap: wrap;
-            opacity: 0; animation: fadeUp 0.8s var(--ease) 1.5s forwards;
-        }
-        .hero-trust {
-            display: flex; align-items: center; gap: 20px; margin-top: 42px; flex-wrap: wrap;
-            opacity: 0; animation: fadeUp 0.8s var(--ease) 1.8s forwards;
-        }
-        .tbadge { display: flex; align-items: center; gap: 7px; font-size: 0.7rem; font-weight: 500; color: var(--text-muted); }
-        .tbadge i { color: var(--gold-3); font-size: 0.82rem; }
-        .tsep { width: 1px; height: 16px; background: var(--border-3); }
-        .hero-img-side {
-            display: flex; justify-content: center; align-items: center; position: relative;
-            opacity: 0; animation: scaleUp 1s var(--ease) 1.2s forwards;
-        }
-        .hero-frame { position: relative; width: 380px; height: 475px; }
-        .hero-frame-border {
-            position: absolute; inset: -16px; border: 1.5px solid var(--border-2);
-            border-radius: 6px; transition: var(--trans);
-        }
-        .hero-frame:hover .hero-frame-border { border-color: var(--gold-3); box-shadow: var(--glow-gold-sm); }
-        .hero-frame-glow {
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-            width: 320px; height: 320px; border-radius: 50%;
-            background: radial-gradient(circle, rgba(200,164,72,0.05), transparent 70%); z-index: 0;
-        }
-        .hero-photo {
-            width: 100%; height: 100%; object-fit: cover; border-radius: 6px;
-            box-shadow: var(--shadow-xl); position: relative; z-index: 1; transition: var(--trans);
-        }
-        .hero-frame:hover .hero-photo { transform: scale(1.015); }
-        .hero-tag {
-            position: absolute; bottom: -20px; right: -20px;
-            background: var(--grad-gold); padding: 13px 24px; border-radius: 4px;
-            box-shadow: var(--shadow-md); z-index: 5; animation: float 5s ease-in-out infinite;
-        }
-        .hero-tag span { font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; color: var(--navy-1); }
-        .hero-tag2 {
-            position: absolute; top: -14px; left: -14px;
-            background: var(--surface-2); border: 1px solid var(--border-2);
-            padding: 10px 16px; border-radius: 4px; z-index: 5;
-            animation: float 6s ease-in-out infinite reverse;
-        }
-        .hero-tag2 i { color: var(--gold-3); font-size: 0.95rem; display: block; margin-bottom: 3px; }
-        .hero-tag2 span { font-family: 'Inter', sans-serif; font-size: 0.58rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-light); display: block; }
-        .hero-scroll {
-            position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 10;
-            display: flex; flex-direction: column; align-items: center; gap: 7px;
-            opacity: 0; animation: fadeIn 1s ease 2.5s forwards;
-        }
-        .hero-scroll span { font-size: 0.58rem; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); }
-        .hero-scroll-bar { width: 1px; height: 32px; background: linear-gradient(to bottom, var(--gold-3), transparent); animation: pulse 2s ease-in-out infinite; }
-
-        /* ================================================================
-           AUTHORITY
-        ================================================================ */
-        .authority { background: var(--surface-1); }
-        .auth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; align-items: center; }
-        .auth-quote {
-            font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 500;
-            color: var(--text-cream); line-height: 1.6; font-style: italic;
-            padding-left: 26px; border-left: 2.5px solid var(--gold-3); margin-bottom: 26px;
-        }
-        .auth-p { font-size: var(--fs-small); font-weight: 300; color: var(--text-muted); line-height: 1.9; margin-bottom: 16px; }
-        .auth-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 38px; }
-        .stat {
-            text-align: center; padding: 26px 14px; border: 1px solid var(--border-1);
-            border-radius: 6px; transition: var(--trans); background: rgba(200,164,72,0.015);
-        }
-        .stat:hover { border-color: var(--gold-3); box-shadow: var(--glow-gold-sm); transform: translateY(-4px); }
-        .stat-ico { font-size: 1.3rem; color: var(--gold-3); margin-bottom: 8px; }
-        .stat-num { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--gold-3); line-height: 1; }
-        .stat-lbl { font-size: 0.62rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-top: 5px; }
-
-        .auth-card {
-            background: var(--surface-card); border: 1px solid var(--border-1);
-            border-radius: 6px; padding: 38px; box-shadow: var(--shadow-md);
-        }
-        .auth-card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-1); }
-        .auth-card-avi { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--gold-3); }
-        .auth-card-nm { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--text-white); }
-        .auth-card-rl { font-size: 0.66rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-3); }
-        .auth-card-qt { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--text-cream); line-height: 1.7; font-style: italic; margin-bottom: 22px; }
-        .auth-feats li {
-            display: flex; align-items: flex-start; gap: 11px; padding: 12px 0;
-            border-bottom: 1px solid var(--border-1); font-size: var(--fs-small); color: var(--text-light); line-height: 1.6;
-        }
-        .auth-feats li:last-child { border-bottom: none; }
-        .auth-feats li i { color: var(--gold-3); font-size: 0.72rem; margin-top: 5px; flex-shrink: 0; }
-
-        /* ================================================================
-           DIFFERENTIATORS
-        ================================================================ */
-        .diffs { background: var(--navy-1); }
-        .diff-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 52px; }
-        .dcard {
-            background: var(--surface-card); border: 1px solid var(--border-1);
-            border-radius: 6px; padding: 36px; transition: var(--trans); position: relative; overflow: hidden;
-        }
-        .dcard::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--grad-gold); transition: height 0.5s ease; }
-        .dcard:hover::before { height: 100%; }
-        .dcard:hover { border-color: var(--border-2); transform: translateY(-5px); box-shadow: var(--glow-gold-sm); }
-        .dcard-ico { width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; background: rgba(200,164,72,0.08); border-radius: 50%; margin-bottom: 16px; }
-        .dcard-ico i { color: var(--gold-3); font-size: 1.05rem; }
-        .dcard h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: var(--text-white); margin-bottom: 10px; }
-        .dcard p { font-size: var(--fs-small); font-weight: 300; color: var(--text-muted); line-height: 1.8; }
-        .dcard-wide { grid-column: 1 / -1; }
-
-        /* ================================================================
-           SERVICES
-        ================================================================ */
-        .services { background: var(--surface-1); }
-        .svc-item {
-            margin-bottom: 26px; background: var(--surface-2); border: 1px solid var(--border-1);
-            border-radius: 6px; overflow: hidden; transition: var(--trans);
-        }
-        .svc-item:hover { border-color: var(--border-2); }
-        .svc-item.open { border-color: var(--gold-3); box-shadow: var(--glow-gold-sm); }
-        .svc-head {
-            padding: 32px 42px; cursor: pointer; display: flex;
-            justify-content: space-between; align-items: center; transition: var(--trans); user-select: none;
-        }
-        .svc-head:hover { background: rgba(200,164,72,0.015); }
-        .svc-head-l { display: flex; align-items: center; gap: 20px; }
-        .svc-n { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 800; color: rgba(200,164,72,0.12); line-height: 1; min-width: 52px; }
-        .svc-t { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--text-white); margin-bottom: 3px; }
-        .svc-st { font-size: 0.76rem; color: var(--gold-3); letter-spacing: 0.5px; }
-        .svc-tog {
-            width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
-            border: 1px solid var(--border-3); border-radius: 50%; flex-shrink: 0; transition: var(--trans);
-        }
-        .svc-tog i { color: var(--gold-3); font-size: 0.82rem; transition: transform 0.4s ease; }
-        .svc-item.open .svc-tog { background: var(--gold-3); border-color: var(--gold-3); }
-        .svc-item.open .svc-tog i { color: var(--navy-1); transform: rotate(180deg); }
-        .svc-body { max-height: 0; overflow: hidden; transition: max-height 0.6s ease; }
-        .svc-body-in { padding: 0 42px 42px; }
-        .svc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-        .svc-body h4 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--gold-3); margin-bottom: 10px; margin-top: 20px; }
-        .svc-body h4:first-child { margin-top: 0; }
-        .svc-body p { font-size: var(--fs-small); font-weight: 300; color: var(--text-muted); line-height: 1.8; margin-bottom: 10px; }
-        .svc-list li {
-            display: flex; align-items: flex-start; gap: 10px; padding: 8px 0;
-            font-size: var(--fs-small); color: var(--text-light); line-height: 1.7;
-            border-bottom: 1px solid var(--border-1);
-        }
-        .svc-list li:last-child { border-bottom: none; }
-        .svc-list li i { color: var(--gold-3); font-size: 0.6rem; margin-top: 6px; flex-shrink: 0; }
-        .svc-cta {
-            margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--border-1);
-            display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
-        }
-        .svc-cta-lbl { font-size: 0.8rem; color: var(--text-muted); }
-        .svc-cta-email { font-size: 0.8rem; font-weight: 500; color: var(--gold-3); }
-
-        /* ================================================================
-           PROCESS
-        ================================================================ */
-        .process { background: var(--navy-1); }
-        .proc-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 60px; position: relative; }
-        .proc-row::before {
-            content: ''; position: absolute; top: 40px; left: 12%; width: 76%; height: 1px;
-            background: linear-gradient(90deg, transparent, var(--gold-5), var(--gold-5), transparent);
-        }
-        .proc-step { text-align: center; padding: 32px 18px; position: relative; }
-        .proc-circ {
-            width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
-            background: var(--surface-2); border: 2px solid var(--gold-3); border-radius: 50%;
-            margin: 0 auto 20px; font-family: 'Playfair Display', serif; font-size: 1.25rem;
-            font-weight: 700; color: var(--gold-3); transition: var(--trans); position: relative; z-index: 2;
-        }
-        .proc-step:hover .proc-circ { background: var(--gold-3); color: var(--navy-1); box-shadow: var(--glow-gold-md); transform: scale(1.1); }
-        .proc-step h3 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--text-white); margin-bottom: 10px; }
-        .proc-step p { font-size: 0.8rem; font-weight: 300; color: var(--text-muted); line-height: 1.7; }
-
-        /* ================================================================
-           EMAIL PHILOSOPHY
-        ================================================================ */
-        .email-phil { background: var(--surface-1); }
-        .email-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; align-items: center; }
-        .email-reasons li { display: flex; align-items: flex-start; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--border-1); }
-        .email-reasons li:last-child { border-bottom: none; }
-        .er-ico { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(200,164,72,0.08); border-radius: 50%; flex-shrink: 0; }
-        .er-ico i { color: var(--gold-3); font-size: 0.88rem; }
-        .er-t { font-size: 0.9rem; font-weight: 600; color: var(--text-white); margin-bottom: 3px; }
-        .er-p { font-size: 0.8rem; font-weight: 300; color: var(--text-muted); line-height: 1.7; }
-        .ev-card { background: var(--surface-card); border: 1px solid var(--border-1); border-radius: 6px; padding: 48px; text-align: center; }
-        .ev-ico { width: 76px; height: 76px; display: flex; align-items: center; justify-content: center; background: rgba(200,164,72,0.08); border: 1px solid var(--border-2); border-radius: 50%; margin: 0 auto 22px; }
-        .ev-ico i { font-size: 1.9rem; color: var(--gold-3); }
-        .ev-title { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--text-white); margin-bottom: 10px; }
-        .ev-text { font-size: var(--fs-small); font-weight: 300; color: var(--text-muted); line-height: 1.8; margin-bottom: 26px; }
-        .ev-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .ev-box { background: rgba(200,164,72,0.03); border: 1px solid var(--border-1); border-radius: 5px; padding: 14px; text-align: center; transition: var(--trans); }
-        .ev-box:hover { border-color: var(--border-2); background: rgba(200,164,72,0.06); }
-        .ev-box i { color: var(--gold-3); font-size: 1rem; margin-bottom: 5px; }
-        .ev-box p { font-size: 0.62rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-light); }
-
-        /* ================================================================
-           FEATURED AUTHORS
-        ================================================================ */
-        .feat-auth { background: var(--navy-1); }
-        .auth-block { margin-bottom: 65px; }
-        .auth-block:last-of-type { margin-bottom: 0; }
-        .acard { background: var(--surface-card); border: 1px solid var(--border-1); border-radius: 6px; overflow: hidden; transition: var(--trans); }
-        .acard:hover { border-color: var(--border-2); box-shadow: var(--glow-gold-sm); }
-        .acard-inner { display: grid; grid-template-columns: 310px 1fr; }
-        .acard-left {
-            padding: 42px 32px; display: flex; flex-direction: column; align-items: center;
-            justify-content: center; border-right: 1px solid var(--border-1);
-            background: rgba(0,0,0,0.1); text-align: center;
-        }
-        .acard-avi {
-            width: 105px; height: 105px; border-radius: 50%; object-fit: cover;
-            border: 3px solid var(--gold-3); margin-bottom: 14px; transition: var(--trans); cursor: pointer;
-        }
-        .acard-avi:hover { transform: scale(1.08); box-shadow: var(--glow-gold-md); animation: borderPulse 2s ease infinite; }
-        .acard-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--text-white); margin-bottom: 7px; }
-        .acard-email {
-            display: inline-flex; align-items: center; gap: 5px; font-size: 0.68rem;
-            color: var(--gold-3); margin-bottom: 22px; word-break: break-all; transition: var(--trans);
-        }
-        .acard-email:hover { color: var(--gold-1); text-decoration: underline; }
-        .acard-bookwrap { width: 185px; margin-bottom: 16px; position: relative; }
-        .acard-bookimg {
-            width: 100%; height: auto; border-radius: 4px; box-shadow: var(--shadow-lg);
-            transition: var(--trans); cursor: pointer;
-        }
-        .acard-bookimg:hover { transform: scale(1.06) translateY(-5px); box-shadow: var(--shadow-xl); }
-        .acard-amazon {
-            display: inline-flex; align-items: center; gap: 7px; padding: 9px 20px;
-            background: #FF9900; color: #111; border-radius: 4px; font-size: 0.66rem;
-            font-weight: 700; letter-spacing: 1px; text-transform: uppercase; transition: var(--trans); margin-top: 4px;
-        }
-        .acard-amazon:hover { background: #FFB84D; transform: translateY(-3px); box-shadow: 0 5px 18px rgba(255,153,0,0.3); }
-        .acard-amazon i { font-size: 0.95rem; }
-        .acard-right { padding: 42px 48px; }
-        .acard-genre { font-size: 0.66rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-3); margin-bottom: 10px; }
-        .acard-btitle { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--text-white); margin-bottom: 12px; }
-        .acard-about { font-size: var(--fs-small); font-weight: 300; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
-        .acard-mlbl { font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-3); margin-bottom: 7px; margin-top: 20px; }
-        .acard-mdesc { font-size: var(--fs-small); font-weight: 300; color: var(--text-muted); line-height: 1.8; }
-        .acard-testi {
-            margin-top: 22px; padding: 22px 26px; background: rgba(200,164,72,0.03);
-            border-left: 3px solid var(--gold-3); border-radius: 0 6px 6px 0;
-        }
-        .acard-testi-qt { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 500; color: var(--text-cream); line-height: 1.7; font-style: italic; margin-bottom: 8px; }
-        .acard-testi-nm { font-size: 0.76rem; font-weight: 600; color: var(--gold-3); }
-
-        /* ================================================================
-           ABOUT
-        ================================================================ */
-        .about { background: var(--surface-1); }
-        .about-top { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 75px; align-items: center; margin-bottom: 85px; }
-        .about-img-wrap { position: relative; }
-        .about-img { width: 100%; max-width: 420px; border-radius: 6px; box-shadow: var(--shadow-xl); border: 1px solid var(--border-1); }
-        .about-img-dec { position: absolute; bottom: -16px; right: -16px; width: 130px; height: 130px; border: 2px solid var(--gold-3); border-radius: 6px; z-index: -1; }
-        .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 42px; }
-        .pcard {
-            background: var(--surface-2); border: 1px solid var(--border-1); border-radius: 6px;
-            padding: 36px 26px; text-align: center; transition: var(--trans); position: relative; overflow: hidden;
-        }
-        .pcard::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: var(--grad-gold); transform: scaleX(0); transition: transform 0.5s ease; }
-        .pcard:hover::after { transform: scaleX(1); }
-        .pcard:hover { transform: translateY(-5px); border-color: var(--border-2); box-shadow: var(--glow-gold-sm); }
-        .pcard-ico { width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; background: rgba(200,164,72,0.08); border: 1px solid var(--border-2); border-radius: 50%; margin: 0 auto 16px; }
-        .pcard-ico i { font-size: 1.15rem; color: var(--gold-3); }
-        .pcard h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--text-white); margin-bottom: 10px; }
-        .pcard p { font-size: 0.8rem; font-weight: 300; color: var(--text-muted); line-height: 1.7; }
-        .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
-        .chk {
-            display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px;
-            background: rgba(200,164,72,0.02); border: 1px solid var(--border-1);
-            border-radius: 5px; transition: var(--trans);
-        }
-        .chk:hover { border-color: var(--border-2); background: rgba(200,164,72,0.04); }
-        .chk i { color: var(--gold-3); font-size: 0.72rem; margin-top: 4px; flex-shrink: 0; }
-        .chk p { font-size: 0.8rem; font-weight: 400; color: var(--text-light); line-height: 1.6; }
-
-        /* ================================================================
-           CTA BANNER
-        ================================================================ */
-        .cta-ban {
-            background: linear-gradient(150deg, #121830, #0f3460); padding: 108px 0;
-            text-align: center; position: relative; overflow: hidden;
-        }
-        .cta-ban .sec-line { top: 0; }
-        .cta-ban::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-5), transparent); }
-        .cta-orb { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 480px; height: 480px; border-radius: 50%; background: radial-gradient(circle, rgba(200,164,72,0.035), transparent 70%); pointer-events: none; }
-        .cta-inner { position: relative; z-index: 2; }
-        .cta-title { font-family: 'Playfair Display', serif; font-size: 2.7rem; font-weight: 800; color: var(--text-white); margin-bottom: 18px; line-height: 1.2; }
-        .cta-title em { color: var(--gold-3); font-style: normal; }
-        .cta-p { font-size: var(--fs-body); font-weight: 300; color: var(--text-muted); max-width: 680px; margin: 0 auto 32px; line-height: 1.8; }
-
-        /* ================================================================
-           INQUIRY FORM
-        ================================================================ */
-        .inquiry { background: var(--navy-1); }
-        .inq-layout { display: grid; grid-template-columns: 1fr 1.3fr; gap: 75px; align-items: flex-start; }
-        .inq-info { position: sticky; top: 115px; }
-        .inq-card { background: var(--surface-card); border: 1px solid var(--border-1); border-radius: 6px; padding: 32px; margin-top: 26px; }
-        .inq-row { display: flex; align-items: flex-start; gap: 13px; padding: 13px 0; border-bottom: 1px solid var(--border-1); }
-        .inq-row:last-child { border-bottom: none; }
-        .inq-row-ico { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(200,164,72,0.08); border-radius: 50%; flex-shrink: 0; }
-        .inq-row-ico i { color: var(--gold-3); font-size: 0.82rem; }
-        .inq-row h4 { font-size: 0.8rem; font-weight: 600; color: var(--text-white); margin-bottom: 1px; }
-        .inq-row p { font-size: 0.76rem; font-weight: 300; color: var(--text-muted); line-height: 1.5; }
-        .inq-row a { color: var(--gold-3); }
-        .inq-row a:hover { text-decoration: underline; }
-        .inq-img { width: 100%; border-radius: 6px; margin-top: 26px; box-shadow: var(--shadow-md); border: 1px solid var(--border-1); }
-        .form-wrap { background: var(--surface-card); border: 1px solid var(--border-1); border-radius: 6px; padding: 48px; }
-        .form-wrap-t { font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 700; color: var(--text-white); margin-bottom: 6px; }
-        .form-wrap-st { font-size: 0.8rem; font-weight: 300; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7; }
-        .fg { margin-bottom: 20px; }
-        .fl { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-light); margin-bottom: 6px; }
-        .fl .rq { color: var(--gold-3); }
-        .fi, .fsl, .fta {
-            width: 100%; padding: 13px 15px; font-family: 'Inter', sans-serif; font-size: var(--fs-small);
-            color: var(--text-light); background: rgba(255,255,255,0.02); border: 1px solid var(--border-1);
-            border-radius: 4px; outline: none; transition: var(--trans);
-        }
-        .fi:focus, .fsl:focus, .fta:focus { border-color: var(--gold-3); box-shadow: 0 0 0 3px rgba(200,164,72,0.1); background: rgba(255,255,255,0.035); }
-        .fi::placeholder, .fta::placeholder { color: var(--text-dim); font-size: 0.8rem; }
-        .fsl { cursor: pointer; -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23c8a448' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 15px center; }
-        .fsl option { background: var(--surface-2); color: var(--text-light); }
-        .fta { min-height: 105px; resize: vertical; }
-        .fr { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        .fcg { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
-        .fci { display: flex; align-items: center; gap: 8px; padding: 9px 13px; background: rgba(255,255,255,0.012); border: 1px solid var(--border-1); border-radius: 4px; cursor: pointer; transition: var(--trans); }
-        .fci:hover { border-color: var(--border-2); background: rgba(200,164,72,0.03); }
-        .fci input[type="checkbox"] { accent-color: var(--gold-3); width: 14px; height: 14px; cursor: pointer; }
-        .fci label { font-size: 0.76rem; color: var(--text-light); cursor: pointer; }
-        .fsubmit {
-            width: 100%; padding: 17px; font-family: 'Inter', sans-serif; font-size: 0.8rem;
-            font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
-            color: var(--navy-1); background: var(--grad-gold); border: none; border-radius: 4px;
-            cursor: pointer; transition: var(--trans); margin-top: 10px; position: relative; overflow: hidden;
-        }
-        .fsubmit::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent); transition: left 0.55s ease; }
-        .fsubmit:hover::after { left: 100%; }
-        .fsubmit:hover { transform: translateY(-2px); box-shadow: var(--glow-gold-lg); }
-        .fnote { margin-top: 16px; padding: 13px 16px; background: rgba(200,164,72,0.03); border: 1px solid var(--border-1); border-radius: 4px; }
-        .fnote p { font-size: 0.7rem; color: var(--text-muted); line-height: 1.7; }
-        .fnote i { color: var(--gold-3); margin-right: 4px; }
-
-        /* ================================================================
-           FOOTER
-        ================================================================ */
-        .footer { background: #040610; padding: 75px 0 22px; position: relative; }
-        .footer .sec-line { top: 0; }
-        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 50px; margin-bottom: 50px; }
-        .ftr-brand { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-3); margin-bottom: 3px; }
-        .ftr-sub { font-size: 0.58rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 16px; }
-        .ftr-txt { font-size: 0.8rem; font-weight: 300; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
-        .ftr-email { display: inline-flex; align-items: center; gap: 7px; font-size: 0.8rem; font-weight: 500; color: var(--gold-3); }
-        .ftr-email:hover { color: var(--gold-1); }
-        .ftr-col-t { font-size: 0.66rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-3); margin-bottom: 20px; }
-        .ftr-links li { margin-bottom: 10px; }
-        .ftr-links a { font-size: 0.8rem; color: var(--text-muted); }
-        .ftr-links a:hover { color: var(--gold-3); padding-left: 4px; }
-        .ftr-bottom { padding-top: 22px; border-top: 1px solid var(--border-1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .ftr-copy { font-size: 0.7rem; color: var(--text-dim); }
-        .ftr-notice { font-size: 0.66rem; color: var(--text-dim); max-width: 460px; text-align: right; line-height: 1.6; }
-        .ftr-notice i { color: var(--gold-3); margin-right: 2px; }
-
-        /* ================================================================
-           BACK TO TOP
-        ================================================================ */
-        .btt {
-            position: fixed; bottom: 26px; right: 26px; width: 42px; height: 42px;
-            display: flex; align-items: center; justify-content: center;
-            background: var(--gold-3); color: var(--navy-1); border-radius: 4px;
-            border: none; cursor: pointer; opacity: 0; visibility: hidden;
-            transition: var(--trans); z-index: 9998; font-size: 0.9rem;
-        }
-        .btt.vis { opacity: 1; visibility: visible; }
-        .btt:hover { transform: translateY(-3px); box-shadow: var(--glow-gold-md); }
-
-        /* ================================================================
-           RESPONSIVE
-        ================================================================ */
-        @media (max-width: 1100px) {
-            .hero-inner, .auth-grid, .email-grid, .about-top, .inq-layout { grid-template-columns: 1fr; gap: 48px; }
-            .hero-text { padding-top: 105px; text-align: center; }
-            .hero-eyebrow { justify-content: center; }
-            .hero-btns { justify-content: center; }
-            .hero-trust { justify-content: center; }
-            .hero-img-side { order: -1; padding-top: 95px; }
-            .hero-frame { width: 310px; height: 390px; }
-            .hero-h1 { font-size: 2.7rem; }
-            .heading { font-size: 2.4rem; }
-            .diff-grid { grid-template-columns: 1fr; }
-            .proc-row { grid-template-columns: repeat(2, 1fr); }
-            .proc-row::before { display: none; }
-            .pillars { grid-template-columns: 1fr; }
-            .checklist { grid-template-columns: 1fr; }
-            .acard-inner { grid-template-columns: 1fr; }
-            .acard-left { border-right: none; border-bottom: 1px solid var(--border-1); }
-            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-            .inq-info { position: static; }
-            .svc-cols { grid-template-columns: 1fr; }
-            .auth-stats { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) {
-            .nav-links { display: none; position: fixed; inset: 0; background: rgba(6,8,16,0.97); flex-direction: column; justify-content: center; align-items: center; gap: 26px; z-index: 90000; }
-            .nav-links.show { display: flex; }
-            .burger { display: flex; }
-            .box { padding: 0 22px; }
-            .sec { padding: 82px 0; }
-            .hero-h1 { font-size: 2rem; }
-            .hero-frame { width: 255px; height: 320px; }
-            .heading { font-size: 1.85rem; }
-            .proc-row { grid-template-columns: 1fr; }
-            .fr, .fcg { grid-template-columns: 1fr; }
-            .form-wrap { padding: 26px 20px; }
-            .svc-head { padding: 20px 24px; }
-            .svc-body-in { padding: 0 24px 24px; }
-            .hero-btns { flex-direction: column; align-items: center; }
-            .hero-trust { flex-direction: column; gap: 7px; }
-            .tsep { display: none; }
-            .cta-title { font-size: 1.9rem; }
-            .ftr-bottom { flex-direction: column; text-align: center; }
-            .ftr-notice { text-align: center; }
-            .ev-mini { grid-template-columns: 1fr; }
-            .acard-right { padding: 28px 22px; }
-        }
-        @media (max-width: 480px) {
-            .hero-h1 { font-size: 1.7rem; }
-            .hero-frame { width: 225px; height: 285px; }
-            .heading { font-size: 1.5rem; }
-            .nav-brand-name { font-size: 1.08rem; }
-            .svc-n { font-size: 1.9rem; }
-            .svc-t { font-size: 1.12rem; }
-            .btn { padding: 13px 22px; font-size: 0.68rem; }
-        }
-    </style>
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media(max-width:1100px){
+  .hin,.agrid,.emgrid,.abtop,.inqlay{grid-template-columns:1fr;gap:46px}
+  .htxt{padding-top:100px;text-align:center}
+  .hey{justify-content:center}
+  .hbtns{justify-content:center}
+  .htrust{justify-content:center}
+  .himg{order:-1;padding-top:90px}
+  .hfrm{width:300px;height:378px}
+  .dgrid{grid-template-columns:1fr}
+  .prrow{grid-template-columns:repeat(2,1fr)}
+  .prrow::before{display:none}
+  .pillars{grid-template-columns:1fr}
+  .cklist{grid-template-columns:1fr}
+  .acinn{grid-template-columns:1fr}
+  .acleft{border-right:none;border-bottom:1px solid var(--b1)}
+  .fgrid{grid-template-columns:1fr;gap:30px}
+  .inqinfo{position:static}
+  .svccols{grid-template-columns:1fr}
+  .astats{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nlinks{display:none;position:fixed;inset:0;background:rgba(5,7,15,.97);flex-direction:column;justify-content:center;align-items:center;gap:24px;z-index:90000}
+  .nlinks.show{display:flex}
+  .burg{display:flex}
+  .bx{padding:0 20px}
+  .sec{padding:78px 0}
+  .hfrm{width:248px;height:310px}
+  .prrow{grid-template-columns:1fr}
+  .fr,.fcg{grid-template-columns:1fr}
+  .fw{padding:24px 19px}
+  .svch{padding:18px 22px}
+  .svcbi{padding:0 22px 22px}
+  .hbtns{flex-direction:column;align-items:center}
+  .htrust{flex-direction:column;gap:6px}
+  .tsep{display:none}
+  .fbot{flex-direction:column;text-align:center}
+  .fnts{text-align:center}
+  .evmini{grid-template-columns:1fr}
+  .acright{padding:26px 20px}
+  .ctat{font-size:1.7rem}
+}
+@media(max-width:480px){
+  .hh1{font-size:1.65rem}
+  .hfrm{width:218px;height:275px}
+  .nbn{font-size:1.05rem}
+  .svcn{font-size:1.85rem}
+  .svct{font-size:1.08rem}
+  .btn{padding:12px 21px;font-size:.66rem}
+}
+</style>
 </head>
 <body>
 
-    <!-- ======================== PRELOADER ======================== -->
-    <div class="preloader" id="preloader">
-        <div class="pl-line"></div>
-        <div class="pl-name">Janet Jefferson</div>
-        <div class="pl-role">Book Specialist Marketer</div>
-        <div class="pl-bar-outer"><div class="pl-bar-inner"></div></div>
-        <div class="pl-quote">"Turning Books Into Powerful Brands That Sell"</div>
+<!-- =============================== PRELOADER =============================== -->
+<div class="pl" id="pl">
+  <div class="pl-ln"></div>
+  <div class="pl-nm">Janet Jefferson</div>
+  <div class="pl-rl">Book Specialist Marketer</div>
+  <div class="pl-bo"><div class="pl-bi"></div></div>
+  <div class="pl-qt">"Turning Books Into Powerful Brands That Sell"</div>
+</div>
+
+<!-- =============================== NAV =============================== -->
+<nav class="nav" id="nav">
+  <div class="nw">
+    <a href="#hero" class="nbrand"><span class="nbn">Janet Jefferson</span><span class="nbs">Book Specialist Marketer</span></a>
+    <div class="nlinks" id="nlinks">
+      <a href="#hero" class="on">Home</a>
+      <a href="#services">Services</a>
+      <a href="#process">How It Works</a>
+      <a href="#authors">Authors</a>
+      <a href="#about">About</a>
+      <a href="#inquiry" class="ncta">Submit Inquiry</a>
+    </div>
+    <div class="burg" id="burg"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- =============================== HERO =============================== -->
+<section class="hero" id="hero">
+  <div class="hbg">
+    <div class="horb horb-a"></div>
+    <div class="horb horb-b"></div>
+    <div class="hmsh"></div>
+    <div class="hstr" style="top:7%;left:10%;animation-delay:0s"></div>
+    <div class="hstr" style="top:13%;left:72%;animation-delay:1.1s"></div>
+    <div class="hstr" style="top:50%;left:17%;animation-delay:.5s"></div>
+    <div class="hstr" style="top:32%;left:61%;animation-delay:1.8s"></div>
+    <div class="hstr" style="top:70%;left:41%;animation-delay:.7s"></div>
+    <div class="hstr" style="top:23%;left:35%;animation-delay:1.4s"></div>
+    <div class="hstr" style="top:62%;left:79%;animation-delay:2.2s"></div>
+    <div class="hstr" style="top:39%;left:6%;animation-delay:1.7s"></div>
+    <div class="hstr" style="top:83%;left:54%;animation-delay:.2s"></div>
+    <div class="hstr" style="top:47%;left:89%;animation-delay:2.6s"></div>
+  </div>
+  <div class="hin">
+    <div class="htxt">
+      <div class="hey">Strategic Book Marketing</div>
+      <h1 class="hh1">Your Book Deserves More Than Just a Publishing Date. It Deserves a <em>Strategy.</em></h1>
+      <p class="hp">I am Janet Jefferson — a dedicated Book Specialist Marketer who has built an entire professional practice around one singular mission: ensuring that the books authors pour their hearts, years, and souls into do not get lost in the noise of an oversaturated market.</p>
+      <p class="hp2">Every author I work with receives a fully customized, deeply researched, and strategically executed marketing system. Every aspect is documented through professional email communication — structured, transparent, and fully accountable.</p>
+      <div class="hbtns">
+        <a href="#inquiry" class="btn btn-g"><i class="fas fa-envelope"></i> Submit Your Inquiry</a>
+        <a href="#services" class="btn btn-o"><i class="fas fa-arrow-right"></i> Explore Services</a>
+      </div>
+      <div class="htrust">
+        <div class="tbdg"><i class="fas fa-shield-halved"></i><span>100% Email Documented</span></div>
+        <div class="tsep"></div>
+        <div class="tbdg"><i class="fas fa-lock"></i><span>Fully Accountable</span></div>
+        <div class="tsep"></div>
+        <div class="tbdg"><i class="fas fa-star"></i><span>Custom Strategies Only</span></div>
+      </div>
+    </div>
+    <div class="himg">
+      <div class="hfrm">
+        <div class="hfb"></div>
+        <div class="hfg"></div>
+        <img src="JANET PICTURE.jpg" alt="Janet Jefferson — Book Specialist Marketer" class="hph">
+        <div class="htag"><span>Book Specialist</span></div>
+        <div class="htag2"><i class="fas fa-award"></i><span>Trusted Expert</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hscr"><span>Scroll</span><div class="hsb"></div></div>
+</section>
+
+<!-- =============================== AUTHORITY =============================== -->
+<section class="sec auth">
+  <div class="sln"></div>
+  <div class="bx">
+    <div class="agrid">
+      <div data-aos="fade-right" data-aos-duration="850">
+        <div class="eyb">The Truth Authors Need</div>
+        <h2 class="hdg">A Great Book Without Marketing <em>Goes Nowhere.</em></h2>
+        <div class="gl"></div>
+        <div class="aqt">"The shelves and Amazon listings are filled with brilliant books that never found their audience — not because the writing was not good enough, but because no strategic marketing foundation was built underneath them."</div>
+        <p class="ap">Writing your book was the creative journey. Marketing your book is the business strategy — and most authors are never taught how to do it effectively.</p>
+        <p class="ap">I build the road. I map the route. And I drive the strategy forward — professionally, methodically, and with complete accountability every step of the way.</p>
+        <div class="astats">
+          <div class="astat" data-aos="fade-up" data-aos-delay="80"><div class="asi"><i class="fas fa-envelope-circle-check"></i></div><div class="asn" data-target="100">0%</div><div class="asl">Email Documented</div></div>
+          <div class="astat" data-aos="fade-up" data-aos-delay="200"><div class="asi"><i class="fas fa-fingerprint"></i></div><div class="asn" data-target="100">0%</div><div class="asl">Custom Strategy</div></div>
+          <div class="astat" data-aos="fade-up" data-aos-delay="320"><div class="asi"><i class="fas fa-handshake"></i></div><div class="asn" data-target="100">0%</div><div class="asl">Accountable</div></div>
+        </div>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="850">
+        <div class="acard">
+          <div class="ach">
+            <img src="JANET PICTURE.jpg" alt="Janet Jefferson" class="acav">
+            <div><div class="acnm">Janet Jefferson</div><div class="acrl">Book Specialist Marketer</div></div>
+          </div>
+          <div class="acqt">"Every great book deserves to be seen. I provide the strategy, structure, and execution that positions your book for success — professionally documented every step of the way."</div>
+          <ul class="acfl">
+            <li><i class="fas fa-check"></i>Structured launch plans creating momentum from day one</li>
+            <li><i class="fas fa-check"></i>Strategic keyword and category positioning for discoverability</li>
+            <li><i class="fas fa-check"></i>Professional identity separating you from every other author</li>
+            <li><i class="fas fa-check"></i>Targeted ad campaigns to the right readers on the right platforms</li>
+            <li><i class="fas fa-check"></i>Expert guidance with clarity, direction, and a proven roadmap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== DIFFERENTIATORS =============================== -->
+<section class="sec diffs">
+  <div class="bx">
+    <div class="ctr" style="max-width:750px;margin:0 auto" data-aos="fade-up">
+      <div class="eyb">Why Authors Choose Janet Jefferson</div>
+      <h2 class="hdg">A Professional Standard That <em>Protects Your Project</em></h2>
+      <div class="glc"></div>
+      <p class="stx">A genuine professional commitment to understanding your book deeply, building a strategy for your specific goals, and documenting every single step along the way.</p>
+    </div>
+    <div class="dgrid">
+      <div class="dc" data-aos="fade-up" data-aos-delay="40"><div class="dci"><i class="fas fa-file-signature"></i></div><h3>Complete Email Documentation</h3><p>Every project conducted exclusively through professional email. Every conversation, decision, update, and deliverable recorded in writing and accessible at any time.</p></div>
+      <div class="dc" data-aos="fade-up" data-aos-delay="110"><div class="dci"><i class="fas fa-fingerprint"></i></div><h3>No Generic Strategies — Ever</h3><p>Every strategy built from the ground up specifically for the author — researched, crafted, and tailored to the unique positioning opportunities of that specific book.</p></div>
+      <div class="dc" data-aos="fade-up" data-aos-delay="180"><div class="dci"><i class="fas fa-brain"></i></div><h3>Deep Genre & Market Understanding</h3><p>Understanding how genres behave, how reader communities engage, how Amazon's algorithm works, and how advertising performs differently across categories.</p></div>
+      <div class="dc" data-aos="fade-up" data-aos-delay="250"><div class="dci"><i class="fas fa-eye"></i></div><h3>Full Project Transparency</h3><p>Scheduled email progress reports detail exactly what has been done, what is in progress, what is coming next, and what results have been achieved. Always informed.</p></div>
+      <div class="dc dcw" data-aos="fade-up" data-aos-delay="320"><div class="dci"><i class="fas fa-shield-halved"></i></div><h3>Professional Standard That Protects Your Project</h3><p>Every project begins with a documented agreement outlining scope, timeline, milestones, and deliverables. Both parties fully aligned before work begins. No surprises. No misunderstandings. Only a clearly defined professional commitment — documented in writing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== SERVICES =============================== -->
+<section class="sec svcs" id="services">
+  <div class="sln"></div>
+  <div class="bx">
+    <div class="ctr" style="max-width:750px;margin:0 auto 56px" data-aos="fade-up">
+      <div class="eyb">Professional Services</div>
+      <h2 class="hdg">Services Designed to <em>Move Your Book Forward</em></h2>
+      <div class="glc"></div>
+      <p class="stx">Every service fully customized, deeply researched, strategically executed, and documented through professional email. For details and discussion, message me directly.</p>
     </div>
 
-    <!-- ======================== NAV ======================== -->
-    <nav class="nav" id="topNav">
-        <div class="nav-wrap">
-            <a href="#hero" class="nav-brand">
-                <span class="nav-brand-name">Janet Jefferson</span>
-                <span class="nav-brand-sub">Book Specialist Marketer</span>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <a href="#hero" class="on">Home</a>
-                <a href="#services">Services</a>
-                <a href="#process">How It Works</a>
-                <a href="#authors">Authors</a>
-                <a href="#about">About</a>
-                <a href="#inquiry" class="nav-inquiry">Submit Inquiry</a>
-            </div>
-            <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    <div class="svc" data-aos="fade-up" data-aos-delay="30">
+      <div class="svch" onclick="togSvc(this)"><div class="svchl"><span class="svcn">01</span><div><div class="svct">Book Launch Strategy</div><div class="svcst">Engineering Your Book's Market Entry</div></div></div><div class="svctog"><i class="fas fa-chevron-down"></i></div></div>
+      <div class="svcbd"><div class="svcbi"><div class="svccols"><div><h4>Problem Solved</h4><p>Most authors launch without strategy — announcing on social media, listing on Amazon, and hoping. The market rewards strategic action, not passive presence.</p><h4>Who It's For</h4><p>Authors preparing to publish who understand a powerful launch requires professional planning, strategic timing, and expert execution.</p></div><div><h4>What's Included</h4><ul class="svcli"><li><i class="fas fa-diamond"></i>Comprehensive pre-launch planning and timeline</li><li><i class="fas fa-diamond"></i>Target audience research and reader profiling</li><li><i class="fas fa-diamond"></i>Competitive market analysis</li><li><i class="fas fa-diamond"></i>Platform selection and channel strategy</li><li><i class="fas fa-diamond"></i>Pre-launch visibility campaign</li><li><i class="fas fa-diamond"></i>Launch day execution plan</li><li><i class="fas fa-diamond"></i>Post-launch momentum strategy</li><li><i class="fas fa-diamond"></i>Complete email documentation throughout</li></ul></div></div><div class="svccta"><span class="svcctal">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-g" style="padding:10px 19px;font-size:.68rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svcctem">janet.authorservices@gmail.com</span></div></div></div>
+    </div>
+
+    <div class="svc" data-aos="fade-up" data-aos-delay="70">
+      <div class="svch" onclick="togSvc(this)"><div class="svchl"><span class="svcn">02</span><div><div class="svct">Amazon Optimization</div><div class="svcst">Transforming Your Listing Into a Sales Engine</div></div></div><div class="svctog"><i class="fas fa-chevron-down"></i></div></div>
+      <div class="svcbd"><div class="svcbi"><div class="svccols"><div><h4>Problem Solved</h4><p>Amazon's algorithm determines which books appear at the top and which remain buried. Without optimization, even brilliantly written books become invisible.</p><h4>Who It's For</h4><p>Authors whose listings aren't generating deserved visibility, or those preparing to publish who want optimization from day one.</p></div><div><h4>What's Included</h4><ul class="svcli"><li><i class="fas fa-diamond"></i>Full Amazon listing audit</li><li><i class="fas fa-diamond"></i>Deep keyword research and placement</li><li><i class="fas fa-diamond"></i>Title and subtitle optimization</li><li><i class="fas fa-diamond"></i>Category and subcategory repositioning</li><li><i class="fas fa-diamond"></i>High-converting description rewrite</li><li><i class="fas fa-diamond"></i>Author Page optimization</li><li><i class="fas fa-diamond"></i>Backend keyword optimization</li><li><i class="fas fa-diamond"></i>Complete email report of all changes</li></ul></div></div><div class="svccta"><span class="svcctal">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-g" style="padding:10px 19px;font-size:.68rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svcctem">janet.authorservices@gmail.com</span></div></div></div>
+    </div>
+
+    <div class="svc" data-aos="fade-up" data-aos-delay="110">
+      <div class="svch" onclick="togSvc(this)"><div class="svchl"><span class="svcn">03</span><div><div class="svct">Author Brand Positioning</div><div class="svcst">Building Identity for Long-Term Success</div></div></div><div class="svctog"><i class="fas fa-chevron-down"></i></div></div>
+      <div class="svcbd"><div class="svcbi"><div class="svccols"><div><h4>Problem Solved</h4><p>Most authors focus on the book and ignore the brand. Even when books perform well, success doesn't compound. A strong brand creates loyal readers and sustainable growth.</p><h4>Who It's For</h4><p>Authors who understand long-term success requires a professional identity — a brand readers recognize, trust, and follow.</p></div><div><h4>What's Included</h4><ul class="svcli"><li><i class="fas fa-diamond"></i>Author brand identity development</li><li><i class="fas fa-diamond"></i>Niche and genre positioning strategy</li><li><i class="fas fa-diamond"></i>Competitive author analysis</li><li><i class="fas fa-diamond"></i>Professional bio writing (short & long)</li><li><i class="fas fa-diamond"></i>Brand voice and messaging framework</li><li><i class="fas fa-diamond"></i>Positioning statement creation</li><li><i class="fas fa-diamond"></i>Social presence audit and recommendations</li><li><i class="fas fa-diamond"></i>Complete brand strategy document via email</li></ul></div></div><div class="svccta"><span class="svcctal">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-g" style="padding:10px 19px;font-size:.68rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svcctem">janet.authorservices@gmail.com</span></div></div></div>
+    </div>
+
+    <div class="svc" data-aos="fade-up" data-aos-delay="150">
+      <div class="svch" onclick="togSvc(this)"><div class="svchl"><span class="svcn">04</span><div><div class="svct">Paid Advertising Campaigns</div><div class="svcst">Reaching the Right Readers With Precision</div></div></div><div class="svctog"><i class="fas fa-chevron-down"></i></div></div>
+      <div class="svcbd"><div class="svcbi"><div class="svccols"><div><h4>Problem Solved</h4><p>Most authors waste significant resources on ads that don't perform — wrong platforms, wrong audiences, ineffective copy, no performance monitoring.</p><h4>Who It's For</h4><p>Authors ready to invest in accelerating reach through targeted advertising — whether launching a new book or reigniting sales on existing titles.</p></div><div><h4>What's Included</h4><ul class="svcli"><li><i class="fas fa-diamond"></i>Platform selection strategy</li><li><i class="fas fa-diamond"></i>Deep audience research and targeting</li><li><i class="fas fa-diamond"></i>Professional ad copy development</li><li><i class="fas fa-diamond"></i>Creative direction and visual strategy</li><li><i class="fas fa-diamond"></i>Campaign structure and planning</li><li><i class="fas fa-diamond"></i>Launch and performance monitoring</li><li><i class="fas fa-diamond"></i>Weekly email performance reports</li><li><i class="fas fa-diamond"></i>Ongoing optimization and adjustment</li></ul></div></div><div class="svccta"><span class="svcctal">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-g" style="padding:10px 19px;font-size:.68rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svcctem">janet.authorservices@gmail.com</span></div></div></div>
+    </div>
+
+    <div class="svc" data-aos="fade-up" data-aos-delay="190">
+      <div class="svch" onclick="togSvc(this)"><div class="svchl"><span class="svcn">05</span><div><div class="svct">Marketing Consulting</div><div class="svcst">Expert Guidance and a Proven Roadmap</div></div></div><div class="svctog"><i class="fas fa-chevron-down"></i></div></div>
+      <div class="svcbd"><div class="svcbi"><div class="svccols"><div><h4>Problem Solved</h4><p>The book marketing landscape is complex and filled with conflicting advice. Most authors try different approaches without coherent strategy. This replaces confusion with professional clarity.</p><h4>Who It's For</h4><p>Authors at any stage needing expert guidance — whether new to marketing or not seeing results after extended effort.</p></div><div><h4>What's Included</h4><ul class="svcli"><li><i class="fas fa-diamond"></i>Comprehensive current marketing review</li><li><i class="fas fa-diamond"></i>In-depth market and competitive analysis</li><li><i class="fas fa-diamond"></i>Gap identification and priority assessment</li><li><i class="fas fa-diamond"></i>Custom marketing roadmap</li><li><i class="fas fa-diamond"></i>Platform and channel recommendations</li><li><i class="fas fa-diamond"></i>Actionable strategy document via email</li><li><i class="fas fa-diamond"></i>Follow-up email support</li></ul></div></div><div class="svccta"><span class="svcctal">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-g" style="padding:10px 19px;font-size:.68rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svcctem">janet.authorservices@gmail.com</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== PROCESS =============================== -->
+<section class="sec process" id="process">
+  <div class="bx">
+    <div class="ctr" data-aos="fade-up">
+      <div class="eyb">How We Work Together</div>
+      <h2 class="hdg">A Process Built on <em>Structure & Accountability</em></h2>
+      <div class="glc"></div>
+      <p class="stx">Every step is clear, structured, and fully documented. You always know where your project stands and you always have everything in writing.</p>
+    </div>
+    <div class="prrow">
+      <div class="prstep" data-aos="fade-up" data-aos-delay="40"><div class="prc">1</div><h3>Submit Details</h3><p>Complete the inquiry form with detailed information about your book, goals, and services needed.</p></div>
+      <div class="prstep" data-aos="fade-up" data-aos-delay="110"><div class="prc">2</div><h3>Custom Proposal</h3><p>After thorough review, I respond via email with a fully customized strategy proposal.</p></div>
+      <div class="prstep" data-aos="fade-up" data-aos-delay="180"><div class="prc">3</div><h3>Agreement & Timeline</h3><p>All details, deliverables, milestones, and timelines confirmed and documented before work begins.</p></div>
+      <div class="prstep" data-aos="fade-up" data-aos-delay="250"><div class="prc">4</div><h3>Execution & Reports</h3><p>Project executed with full professionalism. Scheduled email progress reports delivered throughout.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== EMAIL PHILOSOPHY =============================== -->
+<section class="sec emph">
+  <div class="sln"></div>
+  <div class="bx">
+    <div class="emgrid">
+      <div data-aos="fade-right" data-aos-duration="850">
+        <div class="eyb">Professional Standard</div>
+        <h2 class="hdg">Why Everything Is Handled Through <em>Email</em></h2>
+        <div class="gl"></div>
+        <p class="stx" style="margin-bottom:20px">A deliberate professional decision rooted in transparency, accountability, and full protection of your project.</p>
+        <ul class="emrs">
+          <li><div class="eri"><i class="fas fa-file-pen"></i></div><div><div class="ert">Every Conversation Documented</div><p class="erp">Strategy decisions exist in writing permanently with timestamps. No confusion about what was agreed or promised.</p></div></li>
+          <li><div class="eri"><i class="fas fa-database"></i></div><div><div class="ert">Every Update Recorded & Accessible</div><p class="erp">Scheduled updates document what has been done, what is in progress, and results achieved.</p></div></li>
+          <li><div class="eri"><i class="fas fa-clock-rotate-left"></i></div><div><div class="ert">Every Deliverable Tracked</div><p class="erp">Deliverables arrive timestamped with clear descriptions and written records of receipt.</p></div></li>
+          <li><div class="eri"><i class="fas fa-shield-halved"></i></div><div><div class="ert">Your Project Is Protected</div><p class="erp">Complete professional paper trail protecting your project through every single stage.</p></div></li>
+        </ul>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="850">
+        <div class="evcard">
+          <div class="evico"><i class="fas fa-envelope-open-text"></i></div>
+          <h3 class="evt">Professional Accountability</h3>
+          <p class="evp">This is not a limitation — it is a deliberate professional standard ensuring the highest level of structure and accountability for your project.</p>
+          <div class="evmini">
+            <div class="evbx"><i class="fas fa-check-double"></i><p>Documented Decisions</p></div>
+            <div class="evbx"><i class="fas fa-magnifying-glass"></i><p>Searchable Records</p></div>
+            <div class="evbx"><i class="fas fa-stamp"></i><p>Timestamped Updates</p></div>
+            <div class="evbx"><i class="fas fa-lock"></i><p>Full Protection</p></div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ======================== HERO ======================== -->
-    <section class="hero" id="hero">
-        <div class="hero-bg">
-            <div class="hero-orb hero-orb-a"></div>
-            <div class="hero-orb hero-orb-b"></div>
-            <div class="hero-mesh"></div>
-            <div class="hero-star" style="top:7%;left:11%;animation-delay:0s"></div>
-            <div class="hero-star" style="top:14%;left:74%;animation-delay:1.1s"></div>
-            <div class="hero-star" style="top:52%;left:18%;animation-delay:0.5s"></div>
-            <div class="hero-star" style="top:33%;left:63%;animation-delay:1.8s"></div>
-            <div class="hero-star" style="top:72%;left:42%;animation-delay:0.7s"></div>
-            <div class="hero-star" style="top:24%;left:36%;animation-delay:1.4s"></div>
-            <div class="hero-star" style="top:63%;left:80%;animation-delay:2.2s"></div>
-            <div class="hero-star" style="top:40%;left:7%;animation-delay:1.7s"></div>
-            <div class="hero-star" style="top:85%;left:55%;animation-delay:0.2s"></div>
-            <div class="hero-star" style="top:48%;left:90%;animation-delay:2.6s"></div>
+<!-- =============================== FEATURED AUTHORS =============================== -->
+<section class="sec fauth" id="authors">
+  <div class="bx">
+    <div class="ctr" style="max-width:750px;margin:0 auto 60px" data-aos="fade-up">
+      <div class="eyb">Featured Authors</div>
+      <h2 class="hdg">Authors I Have Had the Privilege of <em>Working With</em></h2>
+      <div class="glc"></div>
+      <p class="stx">Each author represents a professional marketing partnership built on strategy, deep commitment, and results.</p>
+    </div>
+
+    <!-- JAMES VICTOR -->
+    <div class="ablock" data-aos="fade-up" data-aos-duration="850">
+      <div class="acard"><div class="acinn">
+        <div class="acleft">
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer"><img src="James 1.webp" alt="James Victor" class="acavi"></a>
+          <div class="acname">James Victor</div>
+          <a href="mailto:jamesdavidvictor6@gmail.com" class="acem"><i class="fas fa-envelope"></i> jamesdavidvictor6@gmail.com</a>
+          <div class="acbkw"><a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer"><img src="James 2.jpg" alt="James Victor Book" class="acbk"></a></div>
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="acamz"><i class="fab fa-amazon"></i> View on Amazon</a>
         </div>
-        <div class="hero-inner">
-            <div class="hero-text">
-                <div class="hero-eyebrow">Strategic Book Marketing</div>
-                <h1 class="hero-h1">Your Book Deserves More Than Just a Publishing Date. It Deserves a <em>Strategy.</em></h1>
-                <p class="hero-p">I am Janet Jefferson — a dedicated Book Specialist Marketer who has built an entire professional practice around one singular mission: ensuring that the books authors pour their hearts, years, and souls into do not get lost in the noise of an oversaturated market.</p>
-                <p class="hero-p2">Every author I work with receives a fully customized, deeply researched, and strategically executed marketing system. Every aspect is documented through professional email communication — structured, transparent, and fully accountable.</p>
-                <div class="hero-btns">
-                    <a href="#inquiry" class="btn btn-gold"><i class="fas fa-envelope"></i> Submit Your Inquiry</a>
-                    <a href="#services" class="btn btn-outline"><i class="fas fa-arrow-right"></i> Explore Services</a>
-                </div>
-                <div class="hero-trust">
-                    <div class="tbadge"><i class="fas fa-shield-halved"></i><span>100% Email Documented</span></div>
-                    <div class="tsep"></div>
-                    <div class="tbadge"><i class="fas fa-lock"></i><span>Fully Accountable</span></div>
-                    <div class="tsep"></div>
-                    <div class="tbadge"><i class="fas fa-star"></i><span>Custom Strategies Only</span></div>
-                </div>
-            </div>
-            <div class="hero-img-side">
-                <div class="hero-frame">
-                    <div class="hero-frame-border"></div>
-                    <div class="hero-frame-glow"></div>
-                    <img src="janet picture.jpg" alt="Janet Jefferson — Book Specialist Marketer" class="hero-photo">
-                    <div class="hero-tag"><span>Book Specialist</span></div>
-                    <div class="hero-tag2"><i class="fas fa-award"></i><span>Trusted Expert</span></div>
-                </div>
-            </div>
+        <div class="acright">
+          <div class="acgen">Featured Author</div>
+          <h3 class="acbt">James Victor</h3>
+          <p class="acabout">James Victor is a talented author whose work has resonated deeply with readers across multiple communities. His book represents a powerful voice in contemporary literature, bringing fresh perspectives and compelling narratives that captivate audiences from the very first page.</p>
+          <div class="acml">Marketing Partnership</div>
+          <p class="acmd">Working with James involved developing a comprehensive marketing strategy tailored specifically to his book's unique positioning and target audience. Through strategic Amazon optimization, audience targeting, and professional brand positioning, we established a strong market presence driving consistent reader engagement and measurable results.</p>
+          <div class="actesti"><p class="actq">"Working with Janet has been exceptional. Her professionalism, strategic approach, and commitment to documenting every step gave me complete confidence in the partnership. The results speak for themselves."</p><p class="actn">— James Victor</p></div>
         </div>
-        <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-bar"></div></div>
-    </section>
+      </div></div>
+    </div>
 
-    <!-- ======================== AUTHORITY ======================== -->
-    <section class="sec authority">
-        <div class="sec-line"></div>
-        <div class="box">
-            <div class="auth-grid">
-                <div data-aos="fade-right" data-aos-duration="850">
-                    <div class="eyebrow">The Truth Authors Need</div>
-                    <h2 class="heading">A Great Book Without Marketing <em>Goes Nowhere.</em></h2>
-                    <div class="g-line"></div>
-                    <div class="auth-quote">"The shelves and Amazon listings are filled with brilliant books that never found their audience — not because the writing was not good enough, but because no one built a strategic marketing foundation underneath them."</div>
-                    <p class="auth-p">Writing your book was the creative journey. Marketing your book is the business strategy — and most authors are never taught how to do it effectively.</p>
-                    <p class="auth-p">I build the road. I map the route. And I drive the strategy forward — professionally, methodically, and with complete accountability every step of the way.</p>
-                    <div class="auth-stats">
-                        <div class="stat" data-aos="fade-up" data-aos-delay="80"><div class="stat-ico"><i class="fas fa-envelope-circle-check"></i></div><div class="stat-num" data-target="100">0%</div><div class="stat-lbl">Email Documented</div></div>
-                        <div class="stat" data-aos="fade-up" data-aos-delay="200"><div class="stat-ico"><i class="fas fa-fingerprint"></i></div><div class="stat-num" data-target="100">0%</div><div class="stat-lbl">Custom Strategy</div></div>
-                        <div class="stat" data-aos="fade-up" data-aos-delay="320"><div class="stat-ico"><i class="fas fa-handshake"></i></div><div class="stat-num" data-target="100">0%</div><div class="stat-lbl">Accountable</div></div>
-                    </div>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="850">
-                    <div class="auth-card">
-                        <div class="auth-card-head">
-                            <img src="janet picture.jpg" alt="Janet Jefferson" class="auth-card-avi">
-                            <div><div class="auth-card-nm">Janet Jefferson</div><div class="auth-card-rl">Book Specialist Marketer</div></div>
-                        </div>
-                        <div class="auth-card-qt">"Every great book deserves to be seen. I provide the strategy, structure, and execution that positions your book for success — professionally documented every step of the way."</div>
-                        <ul class="auth-feats">
-                            <li><i class="fas fa-check"></i>Structured launch plans creating momentum from day one</li>
-                            <li><i class="fas fa-check"></i>Strategic keyword and category positioning for discoverability</li>
-                            <li><i class="fas fa-check"></i>Professional identity separating you from every other author</li>
-                            <li><i class="fas fa-check"></i>Targeted ad campaigns to the right readers on the right platforms</li>
-                            <li><i class="fas fa-check"></i>Expert guidance with clarity, direction, and a proven roadmap</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <!-- KATE CULLEN -->
+    <div class="ablock" data-aos="fade-up" data-aos-duration="850">
+      <div class="acard"><div class="acinn">
+        <div class="acleft">
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer"><img src="Katie 1.webp" alt="Kate Cullen" class="acavi"></a>
+          <div class="acname">Kate Cullen</div>
+          <a href="mailto:katecullen473@gmail.com" class="acem"><i class="fas fa-envelope"></i> katecullen473@gmail.com</a>
+          <div class="acbkw"><a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer"><img src="Katie 2.jpg" alt="Kate Cullen Book" class="acbk"></a></div>
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="acamz"><i class="fab fa-amazon"></i> View on Amazon</a>
         </div>
-    </section>
-
-    <!-- ======================== DIFFERENTIATORS ======================== -->
-    <section class="sec diffs">
-        <div class="box">
-            <div class="centered" style="max-width:760px;margin:0 auto" data-aos="fade-up">
-                <div class="eyebrow">Why Authors Choose Janet Jefferson</div>
-                <h2 class="heading">A Professional Standard That <em>Protects Your Project</em></h2>
-                <div class="g-line-c"></div>
-                <p class="subtext">A genuine professional commitment to understanding your book deeply, building a strategy for your goals, and documenting every single step.</p>
-            </div>
-            <div class="diff-grid">
-                <div class="dcard" data-aos="fade-up" data-aos-delay="40"><div class="dcard-ico"><i class="fas fa-file-signature"></i></div><h3>Complete Email Documentation</h3><p>Every project conducted exclusively through professional email. Every conversation, decision, update, and deliverable recorded in writing and accessible at any time.</p></div>
-                <div class="dcard" data-aos="fade-up" data-aos-delay="120"><div class="dcard-ico"><i class="fas fa-fingerprint"></i></div><h3>No Generic Strategies — Ever</h3><p>Every strategy built from the ground up specifically for the author — researched, crafted, and tailored to unique positioning opportunities for that specific book.</p></div>
-                <div class="dcard" data-aos="fade-up" data-aos-delay="200"><div class="dcard-ico"><i class="fas fa-brain"></i></div><h3>Deep Genre & Market Understanding</h3><p>Understanding how genres behave, how reader communities engage, how Amazon's algorithm works, and how advertising performs across categories.</p></div>
-                <div class="dcard" data-aos="fade-up" data-aos-delay="280"><div class="dcard-ico"><i class="fas fa-eye"></i></div><h3>Full Project Transparency</h3><p>Scheduled email progress reports detail exactly what has been done, what is in progress, what is coming next, and what results have been achieved.</p></div>
-                <div class="dcard dcard-wide" data-aos="fade-up" data-aos-delay="360"><div class="dcard-ico"><i class="fas fa-shield-halved"></i></div><h3>Professional Standard Protecting Your Project</h3><p>Every project begins with documented agreement outlining scope, timeline, milestones, and deliverables. Both parties fully aligned before work begins. No surprises. No misunderstandings. Only a clearly defined professional commitment — documented in writing.</p></div>
-            </div>
+        <div class="acright">
+          <div class="acgen">Featured Author</div>
+          <h3 class="acbt">Kate Cullen</h3>
+          <p class="acabout">Kate Cullen is an accomplished author whose writing carries a distinctive voice and an ability to connect with readers on a deeply personal level. Her book has made a meaningful impact within her genre, earning recognition for its authenticity and powerful storytelling that resonates across reader communities.</p>
+          <div class="acml">Marketing Partnership</div>
+          <p class="acmd">Kate's marketing partnership involved strategic positioning within her genre, comprehensive Amazon listing optimization, and professional author brand development resonating authentically with her target readership. Every element was documented through our structured email process, ensuring complete transparency throughout.</p>
+          <div class="actesti"><p class="actq">"Janet's structured approach gave me something I had never experienced before — complete clarity and confidence in what was happening with my book. Every update documented, every decision recorded. I always knew exactly where things stood."</p><p class="actn">— Kate Cullen</p></div>
         </div>
-    </section>
+      </div></div>
+    </div>
 
-    <!-- ======================== SERVICES ======================== -->
-    <section class="sec services" id="services">
-        <div class="sec-line"></div>
-        <div class="box">
-            <div class="centered" style="max-width:760px;margin:0 auto 60px" data-aos="fade-up">
-                <div class="eyebrow">Professional Services</div>
-                <h2 class="heading">Services Designed to <em>Move Your Book Forward</em></h2>
-                <div class="g-line-c"></div>
-                <p class="subtext">Every service fully customized, deeply researched, strategically executed, and documented through professional email communication. For details, message me directly.</p>
-            </div>
-
-            <div class="svc-item" data-aos="fade-up" data-aos-delay="40">
-                <div class="svc-head" onclick="togSvc(this)"><div class="svc-head-l"><span class="svc-n">01</span><div><div class="svc-t">Book Launch Strategy</div><div class="svc-st">Engineering Your Book's Market Entry</div></div></div><div class="svc-tog"><i class="fas fa-chevron-down"></i></div></div>
-                <div class="svc-body"><div class="svc-body-in"><div class="svc-cols"><div><h4>Problem Solved</h4><p>Most authors launch without strategy — announcing on social media, listing on Amazon, and hoping. The market rewards strategic action, not passive presence.</p><h4>Who It's For</h4><p>Authors preparing to publish who understand a powerful launch requires professional planning, strategic timing, and expert execution.</p></div><div><h4>What's Included</h4><ul class="svc-list"><li><i class="fas fa-diamond"></i>Comprehensive pre-launch planning and timeline</li><li><i class="fas fa-diamond"></i>Target audience research and reader profiling</li><li><i class="fas fa-diamond"></i>Competitive market analysis</li><li><i class="fas fa-diamond"></i>Platform selection and channel strategy</li><li><i class="fas fa-diamond"></i>Pre-launch visibility campaign</li><li><i class="fas fa-diamond"></i>Launch day execution plan</li><li><i class="fas fa-diamond"></i>Post-launch momentum strategy</li><li><i class="fas fa-diamond"></i>Complete email documentation throughout</li></ul></div></div><div class="svc-cta"><span class="svc-cta-lbl">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-gold" style="padding:11px 20px;font-size:0.7rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svc-cta-email">janet.authorservices@gmail.com</span></div></div></div>
-            </div>
-
-            <div class="svc-item" data-aos="fade-up" data-aos-delay="80">
-                <div class="svc-head" onclick="togSvc(this)"><div class="svc-head-l"><span class="svc-n">02</span><div><div class="svc-t">Amazon Optimization</div><div class="svc-st">Transforming Your Listing Into a Sales Engine</div></div></div><div class="svc-tog"><i class="fas fa-chevron-down"></i></div></div>
-                <div class="svc-body"><div class="svc-body-in"><div class="svc-cols"><div><h4>Problem Solved</h4><p>Amazon's algorithm determines which books appear at the top and which remain buried. Without optimization, even brilliantly written books become invisible.</p><h4>Who It's For</h4><p>Authors whose Amazon listings aren't generating deserved visibility, or those preparing to publish who want optimization from day one.</p></div><div><h4>What's Included</h4><ul class="svc-list"><li><i class="fas fa-diamond"></i>Full Amazon listing audit</li><li><i class="fas fa-diamond"></i>Deep keyword research and placement</li><li><i class="fas fa-diamond"></i>Title and subtitle optimization</li><li><i class="fas fa-diamond"></i>Category and subcategory repositioning</li><li><i class="fas fa-diamond"></i>High-converting description rewrite</li><li><i class="fas fa-diamond"></i>Author Page optimization</li><li><i class="fas fa-diamond"></i>Backend keyword optimization</li><li><i class="fas fa-diamond"></i>Complete email report of all changes</li></ul></div></div><div class="svc-cta"><span class="svc-cta-lbl">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-gold" style="padding:11px 20px;font-size:0.7rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svc-cta-email">janet.authorservices@gmail.com</span></div></div></div>
-            </div>
-
-            <div class="svc-item" data-aos="fade-up" data-aos-delay="120">
-                <div class="svc-head" onclick="togSvc(this)"><div class="svc-head-l"><span class="svc-n">03</span><div><div class="svc-t">Author Brand Positioning</div><div class="svc-st">Building Identity for Long-Term Success</div></div></div><div class="svc-tog"><i class="fas fa-chevron-down"></i></div></div>
-                <div class="svc-body"><div class="svc-body-in"><div class="svc-cols"><div><h4>Problem Solved</h4><p>Most authors focus on the book and ignore the brand. Even when books perform well, success doesn't compound. A strong brand creates loyal readers and sustainable growth.</p><h4>Who It's For</h4><p>Authors who understand long-term success requires a professional identity — a brand readers recognize, trust, and follow.</p></div><div><h4>What's Included</h4><ul class="svc-list"><li><i class="fas fa-diamond"></i>Author brand identity development</li><li><i class="fas fa-diamond"></i>Niche and genre positioning strategy</li><li><i class="fas fa-diamond"></i>Competitive author analysis</li><li><i class="fas fa-diamond"></i>Professional bio writing (short & long)</li><li><i class="fas fa-diamond"></i>Brand voice and messaging framework</li><li><i class="fas fa-diamond"></i>Positioning statement creation</li><li><i class="fas fa-diamond"></i>Social presence audit and recommendations</li><li><i class="fas fa-diamond"></i>Complete brand strategy document via email</li></ul></div></div><div class="svc-cta"><span class="svc-cta-lbl">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-gold" style="padding:11px 20px;font-size:0.7rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svc-cta-email">janet.authorservices@gmail.com</span></div></div></div>
-            </div>
-
-            <div class="svc-item" data-aos="fade-up" data-aos-delay="160">
-                <div class="svc-head" onclick="togSvc(this)"><div class="svc-head-l"><span class="svc-n">04</span><div><div class="svc-t">Paid Advertising Campaigns</div><div class="svc-st">Reaching the Right Readers With Precision</div></div></div><div class="svc-tog"><i class="fas fa-chevron-down"></i></div></div>
-                <div class="svc-body"><div class="svc-body-in"><div class="svc-cols"><div><h4>Problem Solved</h4><p>Most authors waste significant resources on ads that don't perform — wrong platforms, wrong audiences, ineffective copy, no monitoring.</p><h4>Who It's For</h4><p>Authors ready to invest in accelerating reach through targeted advertising — whether launching or reigniting existing titles.</p></div><div><h4>What's Included</h4><ul class="svc-list"><li><i class="fas fa-diamond"></i>Platform selection strategy</li><li><i class="fas fa-diamond"></i>Deep audience research and targeting</li><li><i class="fas fa-diamond"></i>Professional ad copy development</li><li><i class="fas fa-diamond"></i>Creative direction and visual strategy</li><li><i class="fas fa-diamond"></i>Campaign structure and planning</li><li><i class="fas fa-diamond"></i>Launch and performance monitoring</li><li><i class="fas fa-diamond"></i>Weekly email performance reports</li><li><i class="fas fa-diamond"></i>Ongoing optimization and adjustment</li></ul></div></div><div class="svc-cta"><span class="svc-cta-lbl">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-gold" style="padding:11px 20px;font-size:0.7rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svc-cta-email">janet.authorservices@gmail.com</span></div></div></div>
-            </div>
-
-            <div class="svc-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="svc-head" onclick="togSvc(this)"><div class="svc-head-l"><span class="svc-n">05</span><div><div class="svc-t">Marketing Consulting</div><div class="svc-st">Expert Guidance and Proven Roadmap</div></div></div><div class="svc-tog"><i class="fas fa-chevron-down"></i></div></div>
-                <div class="svc-body"><div class="svc-body-in"><div class="svc-cols"><div><h4>Problem Solved</h4><p>The book marketing landscape is complex and filled with conflicting advice. Most authors try different approaches without coherent strategy. This replaces confusion with clarity.</p><h4>Who It's For</h4><p>Authors at any stage needing expert guidance — whether new to marketing or not seeing results after extended effort.</p></div><div><h4>What's Included</h4><ul class="svc-list"><li><i class="fas fa-diamond"></i>Comprehensive current marketing review</li><li><i class="fas fa-diamond"></i>In-depth market and competitive analysis</li><li><i class="fas fa-diamond"></i>Gap identification and priority assessment</li><li><i class="fas fa-diamond"></i>Custom marketing roadmap</li><li><i class="fas fa-diamond"></i>Platform and channel recommendations</li><li><i class="fas fa-diamond"></i>Actionable strategy document via email</li><li><i class="fas fa-diamond"></i>Follow-up email support</li></ul></div></div><div class="svc-cta"><span class="svc-cta-lbl">Discuss this service:</span><a href="mailto:janet.authorservices@gmail.com" class="btn btn-gold" style="padding:11px 20px;font-size:0.7rem"><i class="fas fa-envelope"></i> Message Me</a><span class="svc-cta-email">janet.authorservices@gmail.com</span></div></div></div>
-            </div>
+    <!-- RACHAEL C. DUNCAN -->
+    <div class="ablock" data-aos="fade-up" data-aos-duration="850">
+      <div class="acard"><div class="acinn">
+        <div class="acleft">
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer"><img src="Duncan 1.webp" alt="Rachael C. Duncan" class="acavi"></a>
+          <div class="acname">Rachael C. Duncan</div>
+          <a href="mailto:authorrachaelduncan@gmail.com" class="acem"><i class="fas fa-envelope"></i> authorrachaelduncan@gmail.com</a>
+          <div class="acbkw"><a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer"><img src="Duncan 2.jpg" alt="Rachael C. Duncan Book" class="acbk"></a></div>
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="acamz"><i class="fab fa-amazon"></i> View on Amazon</a>
         </div>
-    </section>
-
-    <!-- ======================== PROCESS ======================== -->
-    <section class="sec process" id="process">
-        <div class="box">
-            <div class="centered" data-aos="fade-up">
-                <div class="eyebrow">How We Work Together</div>
-                <h2 class="heading">A Process Built on <em>Structure & Accountability</em></h2>
-                <div class="g-line-c"></div>
-                <p class="subtext">Every step is clear, structured, and fully documented. You always know where your project stands.</p>
-            </div>
-            <div class="proc-row">
-                <div class="proc-step" data-aos="fade-up" data-aos-delay="40"><div class="proc-circ">1</div><h3>Submit Details</h3><p>Complete the inquiry form with detailed information about your book, goals, and services needed.</p></div>
-                <div class="proc-step" data-aos="fade-up" data-aos-delay="120"><div class="proc-circ">2</div><h3>Custom Proposal</h3><p>After thorough review, I respond via email with a fully customized strategy proposal.</p></div>
-                <div class="proc-step" data-aos="fade-up" data-aos-delay="200"><div class="proc-circ">3</div><h3>Agreement & Timeline</h3><p>All details, deliverables, milestones, and timelines confirmed and documented before work begins.</p></div>
-                <div class="proc-step" data-aos="fade-up" data-aos-delay="280"><div class="proc-circ">4</div><h3>Execution & Reports</h3><p>Project executed with full professionalism. Scheduled email progress reports throughout.</p></div>
-            </div>
+        <div class="acright">
+          <div class="acgen">Featured Author</div>
+          <h3 class="acbt">Rachael C. Duncan</h3>
+          <p class="acabout">Rachael C. Duncan is a distinguished author whose literary work demonstrates both creative depth and commercial appeal. Her book has attracted a dedicated readership through compelling narrative and quality craft, establishing her as a notable voice in the publishing space.</p>
+          <div class="acml">Marketing Partnership</div>
+          <p class="acmd">Our partnership encompassed a complete strategy — from Amazon optimization and keyword research to author brand development and targeted visibility campaigns. The structured, email-documented process ensured complete transparency and delivered measurable, sustained results throughout the engagement.</p>
+          <div class="actesti"><p class="actq">"What sets Janet apart is her genuine commitment to each project. She doesn't use templates — everything was built specifically for my book and my audience. The email documentation meant I could track every single thing that was done. Truly professional."</p><p class="actn">— Rachael C. Duncan</p></div>
         </div>
-    </section>
+      </div></div>
+    </div>
 
-    <!-- ======================== EMAIL PHILOSOPHY ======================== -->
-    <section class="sec email-phil">
-        <div class="sec-line"></div>
-        <div class="box">
-            <div class="email-grid">
-                <div data-aos="fade-right" data-aos-duration="850">
-                    <div class="eyebrow">Professional Standard</div>
-                    <h2 class="heading">Why Everything Is Handled Through <em>Email</em></h2>
-                    <div class="g-line"></div>
-                    <p class="subtext" style="margin-bottom:22px">A deliberate professional decision rooted in transparency, accountability, and protection of your project.</p>
-                    <ul class="email-reasons">
-                        <li><div class="er-ico"><i class="fas fa-file-pen"></i></div><div><div class="er-t">Every Conversation Documented</div><p class="er-p">Strategy decisions exist in writing permanently with timestamps. No confusion about what was agreed or promised.</p></div></li>
-                        <li><div class="er-ico"><i class="fas fa-database"></i></div><div><div class="er-t">Every Update Recorded & Accessible</div><p class="er-p">Scheduled updates document exactly what has been done, what is in progress, and results achieved.</p></div></li>
-                        <li><div class="er-ico"><i class="fas fa-clock-rotate-left"></i></div><div><div class="er-t">Every Deliverable Tracked</div><p class="er-p">Deliverables arrive timestamped with clear descriptions and written records of receipt.</p></div></li>
-                        <li><div class="er-ico"><i class="fas fa-shield-halved"></i></div><div><div class="er-t">Your Project Is Protected</div><p class="er-p">Complete professional paper trail protecting your project through every stage.</p></div></li>
-                    </ul>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="850">
-                    <div class="ev-card">
-                        <div class="ev-ico"><i class="fas fa-envelope-open-text"></i></div>
-                        <h3 class="ev-title">Professional Accountability</h3>
-                        <p class="ev-text">This is not a limitation — it is a deliberate professional standard ensuring the highest level of structure and accountability for your project.</p>
-                        <div class="ev-mini">
-                            <div class="ev-box"><i class="fas fa-check-double"></i><p>Documented Decisions</p></div>
-                            <div class="ev-box"><i class="fas fa-magnifying-glass"></i><p>Searchable Records</p></div>
-                            <div class="ev-box"><i class="fas fa-stamp"></i><p>Timestamped Updates</p></div>
-                            <div class="ev-box"><i class="fas fa-lock"></i><p>Full Protection</p></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="ctr" style="margin-top:52px" data-aos="fade-up">
+      <h3 class="hdg" style="font-size:1.85rem">Your Book Could Be <em>Featured Here</em></h3>
+      <p class="stx" style="margin:9px auto 24px">Every author I partner with has the opportunity to be featured on this page. If you are ready to take your book's marketing seriously, submit your inquiry today.</p>
+      <a href="#inquiry" class="btn btn-g"><i class="fas fa-envelope"></i> Submit Your Inquiry</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== ABOUT =============================== -->
+<section class="sec about" id="about">
+  <div class="sln"></div>
+  <div class="bx">
+    <div class="abtop">
+      <div class="abiw" data-aos="fade-right" data-aos-duration="850">
+        <img src="JANET PICTURE.jpg" alt="Janet Jefferson" class="abim">
+        <div class="abid"></div>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="850">
+        <div class="eyb">About Janet Jefferson</div>
+        <h2 class="hdg">I Built This Practice for Authors Whose Books <em>Deserve More</em></h2>
+        <div class="gl"></div>
+        <p class="stx" style="margin-bottom:15px">The reason most books do not reach their potential audience has almost nothing to do with writing quality. It has everything to do with the absence of a professional marketing strategy.</p>
+        <p class="ap">That truth drove me to build this practice — developing genuine professional expertise in the complex and evolving field of book marketing, and bringing that expertise to every author I work with.</p>
+        <p class="ap">I work across the full spectrum — from launch strategies to Amazon optimization, from author branding to paid advertising, to consulting that gives authors the clarity and direction they need to move forward confidently.</p>
+      </div>
+    </div>
+
+    <div class="ctr" data-aos="fade-up">
+      <div class="eyb">My Philosophy</div>
+      <h2 class="hdg">Three Non-Negotiable <em>Foundations</em></h2>
+      <div class="glc"></div>
+    </div>
+    <div class="pillars">
+      <div class="pcard" data-aos="fade-up" data-aos-delay="40"><div class="pcico"><i class="fas fa-sitemap"></i></div><h3>Structure</h3><p>Every project follows a clearly defined process with documented milestones, confirmed timelines, and explicit deliverables. Nothing falls through the cracks.</p></div>
+      <div class="pcard" data-aos="fade-up" data-aos-delay="110"><div class="pcico"><i class="fas fa-file-signature"></i></div><h3>Documentation</h3><p>Managed exclusively through email. Every decision, update, deliverable, and result documented in writing. Complete visibility at all times.</p></div>
+      <div class="pcard" data-aos="fade-up" data-aos-delay="180"><div class="pcico"><i class="fas fa-handshake"></i></div><h3>Accountability</h3><p>Full professional ownership of every project. Commitments delivered. Timelines met. Your success is my professional responsibility.</p></div>
+    </div>
+
+    <div class="ctr" style="margin-top:62px" data-aos="fade-up">
+      <h2 class="hdg" style="font-size:1.85rem">What Working With Me <em>Looks Like</em></h2>
+      <div class="glc"></div>
+    </div>
+    <div class="cklist">
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="30"><i class="fas fa-check"></i><p>Every project begins with thorough review of your book, goals, and market position</p></div>
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="70"><i class="fas fa-check"></i><p>Every strategy built specifically for your book — never from a template</p></div>
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="110"><i class="fas fa-check"></i><p>Every communication through professional email — documented and accessible</p></div>
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-check"></i><p>Every milestone confirmed in writing before work begins</p></div>
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="190"><i class="fas fa-check"></i><p>Every progress update via scheduled email reports — detailed and precise</p></div>
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="230"><i class="fas fa-check"></i><p>Every deliverable tracked, timestamped, and permanently documented</p></div>
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="270"><i class="fas fa-check"></i><p>Every project concludes with comprehensive final report and next steps</p></div>
+      <div class="ckitem" data-aos="fade-up" data-aos-delay="310"><i class="fas fa-check"></i><p>Limited authors accepted to ensure complete professional focus</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== CTA =============================== -->
+<section class="ctaban">
+  <div class="sln"></div>
+  <div class="ctaorb"></div>
+  <div class="bx ctain" data-aos="fade-up">
+    <h2 class="ctat">Your Book Has Been Written. Now Make Sure the <em>World Reads It.</em></h2>
+    <p class="ctap">You invested months — perhaps years — into your book. That investment deserves a professional marketing strategy, a structured execution plan, and an expert who documents every single step.</p>
+    <a href="#inquiry" class="btn btn-g"><i class="fas fa-envelope"></i> Submit Your Project Inquiry Today</a>
+  </div>
+</section>
+
+<!-- =============================== INQUIRY =============================== -->
+<section class="sec inq" id="inquiry">
+  <div class="bx">
+    <div class="inqlay">
+      <div class="inqinfo" data-aos="fade-right" data-aos-duration="850">
+        <div class="eyb">Submit Your Inquiry</div>
+        <h2 class="hdg">Ready to Take Your Book to the <em>Next Level?</em></h2>
+        <div class="gl"></div>
+        <p class="stx">Complete the form with as much detail as possible. The more thoroughly you describe your book and goals, the more precisely tailored my response will be.</p>
+        <div class="inqcard">
+          <div class="inqr"><div class="inqri"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p><a href="mailto:janet.authorservices@gmail.com">janet.authorservices@gmail.com</a></p></div></div>
+          <div class="inqr"><div class="inqri"><i class="fas fa-clock"></i></div><div><h4>Response Time</h4><p>Within 2-3 business days with a personalized response</p></div></div>
+          <div class="inqr"><div class="inqri"><i class="fas fa-file-lines"></i></div><div><h4>What You Receive</h4><p>A fully customized strategy proposal for your book</p></div></div>
+          <div class="inqr"><div class="inqri"><i class="fas fa-shield-halved"></i></div><div><h4>Standard</h4><p>All communication documented exclusively via email</p></div></div>
         </div>
-    </section>
+        <img src="JANET PICTURE.jpg" alt="Janet Jefferson" class="inqim">
+      </div>
+      <div class="fw" data-aos="fade-left" data-aos-duration="850">
+        <h3 class="fwt">Project Inquiry Form</h3>
+        <p class="fwst">All communication conducted exclusively through email. Please provide a valid email address that you check regularly.</p>
+        <form action="https://formspree.io/f/mwvdkbpp" method="POST" id="theForm">
+          <div class="fr"><div class="fg"><label class="fl">Full Name <span class="rq">*</span></label><input type="text" name="full_name" class="fi" placeholder="Your full name" required></div><div class="fg"><label class="fl">Email <span class="rq">*</span></label><input type="email" name="email" class="fi" placeholder="Your email address" required></div></div>
+          <div class="fr"><div class="fg"><label class="fl">Book Title <span class="rq">*</span></label><input type="text" name="book_title" class="fi" placeholder="Your book title" required></div><div class="fg"><label class="fl">Author Name</label><input type="text" name="author_name" class="fi" placeholder="If different from above"></div></div>
+          <div class="fr"><div class="fg"><label class="fl">Genre <span class="rq">*</span></label><input type="text" name="genre" class="fi" placeholder="e.g., Christian Fiction, Self-Help" required></div><div class="fg"><label class="fl">Status <span class="rq">*</span></label><select name="status" class="fsl" required><option value="" disabled selected>Select status</option><option>Not yet published — Writing/Editing</option><option>Not yet published — Pre-launch</option><option>Published within last 90 days</option><option>Published over 90 days ago</option><option>Multiple published titles</option></select></div></div>
+          <div class="fg"><label class="fl">Target Reader</label><textarea name="target_reader" class="fta" placeholder="Describe your ideal reader — age, background, interests, what they are looking for"></textarea></div>
+          <div class="fg"><label class="fl">Services Interested In</label><div class="fcg"><div class="fci"><input type="checkbox" name="services[]" value="Book Launch Strategy" id="x1"><label for="x1">Book Launch Strategy</label></div><div class="fci"><input type="checkbox" name="services[]" value="Amazon Optimization" id="x2"><label for="x2">Amazon Optimization</label></div><div class="fci"><input type="checkbox" name="services[]" value="Author Brand Positioning" id="x3"><label for="x3">Author Brand Positioning</label></div><div class="fci"><input type="checkbox" name="services[]" value="Paid Advertising" id="x4"><label for="x4">Paid Advertising</label></div><div class="fci"><input type="checkbox" name="services[]" value="Marketing Consulting" id="x5"><label for="x5">Marketing Consulting</label></div><div class="fci"><input type="checkbox" name="services[]" value="Not Sure — Please Recommend" id="x6"><label for="x6">Not Sure — Recommend</label></div></div></div>
+          <div class="fg"><label class="fl">Marketing Goals <span class="rq">*</span></label><textarea name="goals" class="fta" placeholder="What do you want to achieve through professional marketing?" required></textarea></div>
+          <div class="fg"><label class="fl">Previous Marketing</label><textarea name="previous" class="fta" placeholder="What marketing have you already tried and what were the results?"></textarea></div>
+          <div class="fg"><label class="fl">Current Challenges</label><textarea name="challenges" class="fta" placeholder="What specific challenges are you currently facing with your book's marketing?"></textarea></div>
+          <div class="fg"><label class="fl">Desired Timeline</label><select name="timeline" class="fsl"><option value="" disabled selected>Select timeline</option><option>As soon as possible</option><option>Within 30 days</option><option>Within 60-90 days</option><option>Flexible — Quality is my priority</option></select></div>
+          <div class="fg"><label class="fl">Anything Else?</label><textarea name="additional" class="fta" placeholder="Share any additional context about your project or goals"></textarea></div>
+          <input type="hidden" name="_subject" value="New Project Inquiry — Janet Jefferson Book Marketing">
+          <button type="submit" class="fsub" id="subBtn"><i class="fas fa-envelope" style="margin-right:8px"></i> Submit My Project Inquiry</button>
+          <div class="fnote"><p><i class="fas fa-shield-halved"></i> Your information is confidential. All further communication will be conducted exclusively through professional email.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ======================== FEATURED AUTHORS ======================== -->
-    <section class="sec feat-auth" id="authors">
-        <div class="box">
-            <div class="centered" style="max-width:760px;margin:0 auto 65px" data-aos="fade-up">
-                <div class="eyebrow">Featured Authors</div>
-                <h2 class="heading">Authors I Have Had the Privilege of <em>Working With</em></h2>
-                <div class="g-line-c"></div>
-                <p class="subtext">Each author represents a professional marketing partnership built on strategy, commitment, and results.</p>
-            </div>
+<!-- =============================== FOOTER =============================== -->
+<footer class="ftr">
+  <div class="sln"></div>
+  <div class="bx">
+    <div class="fgrid">
+      <div>
+        <div class="fbn">Janet Jefferson</div>
+        <div class="fbs">Book Specialist Marketer</div>
+        <p class="ftxt">Developing strategic, structured, and results-driven marketing systems for authors who are serious about their book's long-term success. Every project professionally managed and fully documented through email.</p>
+        <a href="mailto:janet.authorservices@gmail.com" class="fem"><i class="fas fa-envelope"></i> janet.authorservices@gmail.com</a>
+      </div>
+      <div>
+        <h4 class="fct">Navigation</h4>
+        <ul class="flks"><li><a href="#hero">Home</a></li><li><a href="#services">Services</a></li><li><a href="#process">How It Works</a></li><li><a href="#authors">Featured Authors</a></li><li><a href="#about">About</a></li><li><a href="#inquiry">Submit Inquiry</a></li></ul>
+      </div>
+      <div>
+        <h4 class="fct">Services</h4>
+        <ul class="flks"><li><a href="#services">Book Launch Strategy</a></li><li><a href="#services">Amazon Optimization</a></li><li><a href="#services">Author Brand Positioning</a></li><li><a href="#services">Paid Advertising</a></li><li><a href="#services">Marketing Consulting</a></li></ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <p class="fcopy">&copy; 2025 Janet Jefferson Book Marketing. All Rights Reserved.</p>
+      <p class="fnts"><i class="fas fa-shield-halved"></i> All projects managed exclusively through professional email for complete documentation, transparency, and accountability.</p>
+    </div>
+  </div>
+</footer>
 
-            <!-- James Victor -->
-            <div class="auth-block" data-aos="fade-up" data-aos-duration="850">
-                <div class="acard"><div class="acard-inner">
-                    <div class="acard-left">
-                        <a href="https://www.amazon.com" target="_blank" rel="noopener"><img src="James picsss.webp" alt="James Victor" class="acard-avi"></a>
-                        <div class="acard-name">James Victor</div>
-                        <a href="mailto:jamesdavidvictor6@gmail.com" class="acard-email"><i class="fas fa-envelope"></i> jamesdavidvictor6@gmail.com</a>
-                        <div class="acard-bookwrap"><a href="https://www.amazon.com" target="_blank" rel="noopener"><img src="James bk cover.jpg" alt="James Victor Book" class="acard-bookimg"></a></div>
-                        <a href="https://www.amazon.com" target="_blank" rel="noopener" class="acard-amazon"><i class="fab fa-amazon"></i> View on Amazon</a>
-                    </div>
-                    <div class="acard-right">
-                        <div class="acard-genre">Featured Author</div>
-                        <h3 class="acard-btitle">James Victor</h3>
-                        <p class="acard-about">James Victor is a talented author whose work has resonated deeply with readers across multiple communities. His book represents a powerful voice in contemporary literature, bringing fresh perspectives and compelling narratives that captivate audiences from the very first page.</p>
-                        <div class="acard-mlbl">Marketing Partnership</div>
-                        <p class="acard-mdesc">Working with James involved developing a comprehensive marketing strategy tailored specifically to his book's unique positioning and target audience. Through strategic Amazon optimization, audience targeting, and professional brand positioning, we established a strong market presence driving consistent reader engagement.</p>
-                        <div class="acard-testi"><p class="acard-testi-qt">"Working with Janet has been exceptional. Her professionalism, strategic approach, and commitment to documenting every step gave me complete confidence. The results speak for themselves."</p><p class="acard-testi-nm">— James Victor</p></div>
-                    </div>
-                </div></div>
-            </div>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
 
-            <!-- Kate Cullen -->
-            <div class="auth-block" data-aos="fade-up" data-aos-duration="850">
-                <div class="acard"><div class="acard-inner">
-                    <div class="acard-left">
-                        <a href="https://www.amazon.com" target="_blank" rel="noopener"><img src="Katie picz.web" alt="Kate Cullen" class="acard-avi"></a>
-                        <div class="acard-name">Kate Cullen</div>
-                        <a href="mailto:katecullen473@gmail.com" class="acard-email"><i class="fas fa-envelope"></i> katecullen473@gmail.com</a>
-                        <div class="acard-bookwrap"><a href="https://www.amazon.com" target="_blank" rel="noopener"><img src="Kate bk cover.jpg" alt="Kate Cullen Book" class="acard-bookimg"></a></div>
-                        <a href="https://www.amazon.com" target="_blank" rel="noopener" class="acard-amazon"><i class="fab fa-amazon"></i> View on Amazon</a>
-                    </div>
-                    <div class="acard-right">
-                        <div class="acard-genre">Featured Author</div>
-                        <h3 class="acard-btitle">Kate Cullen</h3>
-                        <p class="acard-about">Kate Cullen is an accomplished author whose writing carries a distinctive voice and an ability to connect with readers on a deeply personal level. Her book has made a meaningful impact within her genre, earning recognition for its authenticity and powerful storytelling.</p>
-                        <div class="acard-mlbl">Marketing Partnership</div>
-                        <p class="acard-mdesc">Kate's marketing partnership involved strategic positioning within her genre, comprehensive Amazon listing optimization, and professional author brand development resonating authentically with her target readership. Every element documented through our structured email process.</p>
-                        <div class="acard-testi"><p class="acard-testi-qt">"Janet's structured approach gave me something I had never experienced — complete clarity and confidence. Every update documented, every decision recorded. I always knew exactly where things stood."</p><p class="acard-testi-nm">— Kate Cullen</p></div>
-                    </div>
-                </div></div>
-            </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+/* PRELOADER */
+window.addEventListener('load',function(){setTimeout(function(){document.getElementById('pl').classList.add('gone')},4000)});
 
-            <!-- Rachael C. Duncan -->
-            <div class="auth-block" data-aos="fade-up" data-aos-duration="850">
-                <div class="acard"><div class="acard-inner">
-                    <div class="acard-left">
-                        <a href="https://www.amazon.com" target="_blank" rel="noopener"><img src="dunce p...webp" alt="Rachael C. Duncan" class="acard-avi"></a>
-                        <div class="acard-name">Rachael C. Duncan</div>
-                        <a href="mailto:authorrachaelduncan@gmail.com" class="acard-email"><i class="fas fa-envelope"></i> authorrachaelduncan@gmail.com</a>
-                        <div class="acard-bookwrap"><a href="https://www.amazon.com" target="_blank" rel="noopener"><img src="dunce bkcover.jpg" alt="Rachael C. Duncan Book" class="acard-bookimg"></a></div>
-                        <a href="https://www.amazon.com" target="_blank" rel="noopener" class="acard-amazon"><i class="fab fa-amazon"></i> View on Amazon</a>
-                    </div>
-                    <div class="acard-right">
-                        <div class="acard-genre">Featured Author</div>
-                        <h3 class="acard-btitle">Rachael C. Duncan</h3>
-                        <p class="acard-about">Rachael C. Duncan is a distinguished author whose literary work demonstrates both creative depth and commercial appeal. Her book has attracted a dedicated readership through compelling narrative and quality craft, establishing her as a notable voice in publishing.</p>
-                        <div class="acard-mlbl">Marketing Partnership</div>
-                        <p class="acard-mdesc">Our partnership encompassed a complete strategy — from Amazon optimization and keyword strategy to author brand development and targeted visibility campaigns. The structured, email-documented process ensured complete transparency and measurable results.</p>
-                        <div class="acard-testi"><p class="acard-testi-qt">"What sets Janet apart is her genuine commitment. She doesn't use templates — everything was built specifically for my book and audience. The email documentation meant I could track everything. Truly professional."</p><p class="acard-testi-nm">— Rachael C. Duncan</p></div>
-                    </div>
-                </div></div>
-            </div>
+/* AOS */
+AOS.init({duration:700,easing:'ease-out-cubic',once:true,offset:72});
 
-            <div class="centered" style="margin-top:55px" data-aos="fade-up">
-                <h3 class="heading" style="font-size:1.9rem">Your Book Could Be <em>Featured Here</em></h3>
-                <p class="subtext" style="margin:10px auto 26px">Every author I partner with has the opportunity to be featured. Submit your inquiry today.</p>
-                <a href="#inquiry" class="btn btn-gold"><i class="fas fa-envelope"></i> Submit Your Inquiry</a>
-            </div>
-        </div>
-    </section>
+/* NAV */
+var nav=document.getElementById('nav'),btt=document.getElementById('btt');
+window.addEventListener('scroll',function(){
+  nav.classList.toggle('stk',window.scrollY>68);
+  btt.classList.toggle('vis',window.scrollY>440);
+  setActive();
+  runCounters();
+});
 
-    <!-- ======================== ABOUT ======================== -->
-    <section class="sec about" id="about">
-        <div class="sec-line"></div>
-        <div class="box">
-            <div class="about-top">
-                <div class="about-img-wrap" data-aos="fade-right" data-aos-duration="850">
-                    <img src="janet picture.jpg" alt="Janet Jefferson" class="about-img">
-                    <div class="about-img-dec"></div>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="850">
-                    <div class="eyebrow">About Janet Jefferson</div>
-                    <h2 class="heading">I Built This Practice for Authors Whose Books <em>Deserve More</em></h2>
-                    <div class="g-line"></div>
-                    <p class="subtext" style="margin-bottom:16px">The reason most books don't reach their potential audience has almost nothing to do with writing quality. It has everything to do with the absence of a professional marketing strategy.</p>
-                    <p class="auth-p">That truth drove me to build this practice — developing genuine professional expertise in the complex and evolving field of book marketing, and bringing that expertise to every author I work with.</p>
-                    <p class="auth-p">I work across the full spectrum — from launch strategies to Amazon optimization, from author branding to paid advertising, to consulting that gives authors clarity and direction.</p>
-                </div>
-            </div>
+function setActive(){
+  var secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('.nlinks a:not(.ncta)'),cur='';
+  secs.forEach(function(s){if(window.scrollY>=s.offsetTop-175)cur=s.id});
+  links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+cur)});
+}
 
-            <div class="centered" data-aos="fade-up">
-                <div class="eyebrow">My Philosophy</div>
-                <h2 class="heading">Three Non-Negotiable <em>Foundations</em></h2>
-                <div class="g-line-c"></div>
-            </div>
-            <div class="pillars">
-                <div class="pcard" data-aos="fade-up" data-aos-delay="40"><div class="pcard-ico"><i class="fas fa-sitemap"></i></div><h3>Structure</h3><p>Every project follows a clearly defined process with documented milestones, confirmed timelines, and explicit deliverables.</p></div>
-                <div class="pcard" data-aos="fade-up" data-aos-delay="120"><div class="pcard-ico"><i class="fas fa-file-signature"></i></div><h3>Documentation</h3><p>Managed exclusively through email. Every decision, update, deliverable, and result documented in writing.</p></div>
-                <div class="pcard" data-aos="fade-up" data-aos-delay="200"><div class="pcard-ico"><i class="fas fa-handshake"></i></div><h3>Accountability</h3><p>Full professional ownership of every project. Commitments delivered. Timelines met. Your success is my responsibility.</p></div>
-            </div>
+/* MOBILE */
+var burg=document.getElementById('burg'),nlinks=document.getElementById('nlinks');
+burg.addEventListener('click',function(){this.classList.toggle('on');nlinks.classList.toggle('show')});
+document.querySelectorAll('.nlinks a').forEach(function(a){a.addEventListener('click',function(){burg.classList.remove('on');nlinks.classList.remove('show')})});
 
-            <div class="centered" style="margin-top:65px" data-aos="fade-up">
-                <h2 class="heading" style="font-size:1.9rem">What Working With Me <em>Looks Like</em></h2>
-                <div class="g-line-c"></div>
-            </div>
-            <div class="checklist">
-                <div class="chk" data-aos="fade-up" data-aos-delay="40"><i class="fas fa-check"></i><p>Every project begins with thorough review of your book, goals, and market position</p></div>
-                <div class="chk" data-aos="fade-up" data-aos-delay="80"><i class="fas fa-check"></i><p>Every strategy built specifically for your book — never from a template</p></div>
-                <div class="chk" data-aos="fade-up" data-aos-delay="120"><i class="fas fa-check"></i><p>Every communication through professional email — documented and accessible</p></div>
-                <div class="chk" data-aos="fade-up" data-aos-delay="160"><i class="fas fa-check"></i><p>Every milestone confirmed in writing before work begins</p></div>
-                <div class="chk" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-check"></i><p>Every progress update via scheduled email reports — detailed and precise</p></div>
-                <div class="chk" data-aos="fade-up" data-aos-delay="240"><i class="fas fa-check"></i><p>Every deliverable tracked, timestamped, and documented permanently</p></div>
-                <div class="chk" data-aos="fade-up" data-aos-delay="280"><i class="fas fa-check"></i><p>Every project concludes with comprehensive final report and next steps</p></div>
-                <div class="chk" data-aos="fade-up" data-aos-delay="320"><i class="fas fa-check"></i><p>Limited authors accepted to ensure complete professional focus</p></div>
-            </div>
-        </div>
-    </section>
+/* SERVICE ACCORDION */
+function togSvc(h){
+  var item=h.parentElement,bd=item.querySelector('.svcbd'),isOpen=item.classList.contains('opn');
+  document.querySelectorAll('.svc.opn').forEach(function(el){if(el!==item){el.classList.remove('opn');el.querySelector('.svcbd').style.maxHeight='0'}});
+  if(isOpen){item.classList.remove('opn');bd.style.maxHeight='0'}
+  else{item.classList.add('opn');bd.style.maxHeight=bd.scrollHeight+'px'}
+}
 
-    <!-- ======================== CTA ======================== -->
-    <section class="cta-ban">
-        <div class="sec-line"></div>
-        <div class="cta-orb"></div>
-        <div class="box cta-inner" data-aos="fade-up">
-            <h2 class="cta-title">Your Book Has Been Written. Now Make Sure the <em>World Reads It.</em></h2>
-            <p class="cta-p">You invested months — perhaps years — into your book. That investment deserves a professional marketing strategy, a structured execution plan, and an expert who documents every single step.</p>
-            <a href="#inquiry" class="btn btn-gold"><i class="fas fa-envelope"></i> Submit Your Project Inquiry Today</a>
-        </div>
-    </section>
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    var t=document.querySelector(this.getAttribute('href'));
+    if(t)window.scrollTo({top:t.offsetTop-72,behavior:'smooth'});
+  });
+});
 
-    <!-- ======================== INQUIRY ======================== -->
-    <section class="sec inquiry" id="inquiry">
-        <div class="box">
-            <div class="inq-layout">
-                <div class="inq-info" data-aos="fade-right" data-aos-duration="850">
-                    <div class="eyebrow">Submit Your Inquiry</div>
-                    <h2 class="heading">Ready to Take Your Book to the <em>Next Level?</em></h2>
-                    <div class="g-line"></div>
-                    <p class="subtext">Complete the form with as much detail as possible. The more thoroughly you describe your book and goals, the more precisely tailored my response will be.</p>
-                    <div class="inq-card">
-                        <div class="inq-row"><div class="inq-row-ico"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p><a href="mailto:janet.authorservices@gmail.com">janet.authorservices@gmail.com</a></p></div></div>
-                        <div class="inq-row"><div class="inq-row-ico"><i class="fas fa-clock"></i></div><div><h4>Response Time</h4><p>Within 2-3 business days with a personalized response</p></div></div>
-                        <div class="inq-row"><div class="inq-row-ico"><i class="fas fa-file-lines"></i></div><div><h4>What You Receive</h4><p>A fully customized strategy proposal for your book</p></div></div>
-                        <div class="inq-row"><div class="inq-row-ico"><i class="fas fa-shield-halved"></i></div><div><h4>Standard</h4><p>All communication documented via email</p></div></div>
-                    </div>
-                    <img src="janet picture.jpg" alt="Janet Jefferson" class="inq-img">
-                </div>
-                <div class="form-wrap" data-aos="fade-left" data-aos-duration="850">
-                    <h3 class="form-wrap-t">Project Inquiry Form</h3>
-                    <p class="form-wrap-st">All communication conducted exclusively through email. Please provide a valid email you check regularly.</p>
-                    <form action="https://formspree.io/f/mwvdkbpp" method="POST" id="theForm">
-                        <div class="fr"><div class="fg"><label class="fl">Full Name <span class="rq">*</span></label><input type="text" name="full_name" class="fi" placeholder="Your full name" required></div><div class="fg"><label class="fl">Email <span class="rq">*</span></label><input type="email" name="email" class="fi" placeholder="Your email address" required></div></div>
-                        <div class="fr"><div class="fg"><label class="fl">Book Title <span class="rq">*</span></label><input type="text" name="book_title" class="fi" placeholder="Your book title" required></div><div class="fg"><label class="fl">Author Name</label><input type="text" name="author_name" class="fi" placeholder="If different from above"></div></div>
-                        <div class="fr"><div class="fg"><label class="fl">Genre <span class="rq">*</span></label><input type="text" name="genre" class="fi" placeholder="e.g., Christian Fiction, Self-Help" required></div><div class="fg"><label class="fl">Status <span class="rq">*</span></label><select name="status" class="fsl" required><option value="" disabled selected>Select status</option><option>Not yet published — Writing/Editing</option><option>Not yet published — Pre-launch</option><option>Published within last 90 days</option><option>Published over 90 days ago</option><option>Multiple published titles</option></select></div></div>
-                        <div class="fg"><label class="fl">Target Reader</label><textarea name="target_reader" class="fta" placeholder="Describe your ideal reader — age, background, interests"></textarea></div>
-                        <div class="fg"><label class="fl">Services Interested In</label><div class="fcg"><div class="fci"><input type="checkbox" name="services[]" value="Book Launch Strategy" id="x1"><label for="x1">Book Launch Strategy</label></div><div class="fci"><input type="checkbox" name="services[]" value="Amazon Optimization" id="x2"><label for="x2">Amazon Optimization</label></div><div class="fci"><input type="checkbox" name="services[]" value="Author Brand Positioning" id="x3"><label for="x3">Author Brand Positioning</label></div><div class="fci"><input type="checkbox" name="services[]" value="Paid Advertising" id="x4"><label for="x4">Paid Advertising</label></div><div class="fci"><input type="checkbox" name="services[]" value="Marketing Consulting" id="x5"><label for="x5">Marketing Consulting</label></div><div class="fci"><input type="checkbox" name="services[]" value="Not Sure" id="x6"><label for="x6">Not Sure — Recommend</label></div></div></div>
-                        <div class="fg"><label class="fl">Marketing Goals <span class="rq">*</span></label><textarea name="goals" class="fta" placeholder="What do you want to achieve?" required></textarea></div>
-                        <div class="fg"><label class="fl">Previous Marketing</label><textarea name="previous" class="fta" placeholder="What marketing have you tried and what were the results?"></textarea></div>
-                        <div class="fg"><label class="fl">Current Challenges</label><textarea name="challenges" class="fta" placeholder="What challenges are you facing?"></textarea></div>
-                        <div class="fg"><label class="fl">Timeline</label><select name="timeline" class="fsl"><option value="" disabled selected>Select timeline</option><option>As soon as possible</option><option>Within 30 days</option><option>Within 60-90 days</option><option>Flexible — Quality is priority</option></select></div>
-                        <div class="fg"><label class="fl">Anything Else?</label><textarea name="additional" class="fta" placeholder="Share any additional context"></textarea></div>
-                        <input type="hidden" name="_subject" value="New Project Inquiry — Janet Jefferson Book Marketing">
-                        <button type="submit" class="fsubmit" id="subBtn"><i class="fas fa-envelope" style="margin-right:8px"></i> Submit My Project Inquiry</button>
-                        <div class="fnote"><p><i class="fas fa-shield-halved"></i> Your information is confidential. All communication conducted exclusively through professional email.</p></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======================== FOOTER ======================== -->
-    <footer class="footer">
-        <div class="sec-line"></div>
-        <div class="box">
-            <div class="footer-grid">
-                <div>
-                    <div class="ftr-brand">Janet Jefferson</div>
-                    <div class="ftr-sub">Book Specialist Marketer</div>
-                    <p class="ftr-txt">Developing strategic, structured, and results-driven marketing systems for authors serious about long-term success. Every project professionally managed and documented through email.</p>
-                    <a href="mailto:janet.authorservices@gmail.com" class="ftr-email"><i class="fas fa-envelope"></i> janet.authorservices@gmail.com</a>
-                </div>
-                <div>
-                    <h4 class="ftr-col-t">Navigation</h4>
-                    <ul class="ftr-links"><li><a href="#hero">Home</a></li><li><a href="#services">Services</a></li><li><a href="#process">How It Works</a></li><li><a href="#authors">Featured Authors</a></li><li><a href="#about">About</a></li><li><a href="#inquiry">Submit Inquiry</a></li></ul>
-                </div>
-                <div>
-                    <h4 class="ftr-col-t">Services</h4>
-                    <ul class="ftr-links"><li><a href="#services">Book Launch Strategy</a></li><li><a href="#services">Amazon Optimization</a></li><li><a href="#services">Author Brand Positioning</a></li><li><a href="#services">Paid Advertising</a></li><li><a href="#services">Marketing Consulting</a></li></ul>
-                </div>
-            </div>
-            <div class="ftr-bottom">
-                <p class="ftr-copy">&copy; 2024 Janet Jefferson Book Marketing. All Rights Reserved.</p>
-                <p class="ftr-notice"><i class="fas fa-shield-halved"></i> All projects managed exclusively through professional email for complete documentation, transparency, and accountability.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- BACK TO TOP -->
-    <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
-
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-    <script>
-    /* ============ PRELOADER ============ */
-    window.addEventListener('load', function(){
-        setTimeout(function(){ document.getElementById('preloader').classList.add('done'); }, 4000);
-    });
-
-    /* ============ AOS ============ */
-    AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 75 });
-
-    /* ============ NAV SCROLL ============ */
-    var nav = document.getElementById('topNav');
-    var btt = document.getElementById('btt');
-    window.addEventListener('scroll', function(){
-        nav.classList.toggle('stuck', window.scrollY > 70);
-        btt.classList.toggle('vis', window.scrollY > 450);
-        setActiveLink();
-        runCounters();
-    });
-
-    /* ============ ACTIVE LINK ============ */
-    function setActiveLink(){
-        var secs = document.querySelectorAll('section[id]');
-        var links = document.querySelectorAll('.nav-links a:not(.nav-inquiry)');
-        var cur = '';
-        secs.forEach(function(s){ if(window.scrollY >= s.offsetTop - 180) cur = s.id; });
-        links.forEach(function(l){ l.classList.toggle('on', l.getAttribute('href') === '#' + cur); });
+/* COUNTERS */
+var counted=false;
+function runCounters(){
+  if(counted)return;
+  var nums=document.querySelectorAll('.asn');
+  nums.forEach(function(el){
+    var rect=el.getBoundingClientRect();
+    if(rect.top<window.innerHeight&&rect.bottom>0){
+      counted=true;
+      var target=parseInt(el.getAttribute('data-target')),cur=0,step=target/78;
+      var iv=setInterval(function(){cur+=step;if(cur>=target){el.textContent=target+'%';clearInterval(iv)}else el.textContent=Math.floor(cur)+'%'},20);
     }
+  });
+}
 
-    /* ============ MOBILE MENU ============ */
-    var burger = document.getElementById('burger');
-    var navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', function(){ this.classList.toggle('active'); navLinks.classList.toggle('show'); });
-    document.querySelectorAll('.nav-links a').forEach(function(a){ a.addEventListener('click', function(){ burger.classList.remove('active'); navLinks.classList.remove('show'); }); });
+/* FORM */
+var form=document.getElementById('theForm');
+if(form){
+  form.addEventListener('submit',function(){
+    var b=document.getElementById('subBtn');
+    b.innerHTML='<i class="fas fa-spinner fa-spin" style="margin-right:8px"></i>Submitting...';
+    b.style.opacity='.7';b.disabled=true;
+    setTimeout(function(){b.innerHTML='<i class="fas fa-check-circle" style="margin-right:8px"></i>Submitted Successfully!';b.style.background='#2d8f4e';b.style.opacity='1'},3000);
+  });
+}
 
-    /* ============ SERVICE ACCORDION ============ */
-    function togSvc(h){
-        var item = h.parentElement, body = item.querySelector('.svc-body'), isOpen = item.classList.contains('open');
-        document.querySelectorAll('.svc-item.open').forEach(function(el){ if(el !== item){ el.classList.remove('open'); el.querySelector('.svc-body').style.maxHeight = '0'; } });
-        if(isOpen){ item.classList.remove('open'); body.style.maxHeight = '0'; }
-        else { item.classList.add('open'); body.style.maxHeight = body.scrollHeight + 'px'; }
-    }
-
-    /* ============ SMOOTH SCROLL ============ */
-    document.querySelectorAll('a[href^="#"]').forEach(function(a){
-        a.addEventListener('click', function(e){
-            e.preventDefault();
-            var t = document.querySelector(this.getAttribute('href'));
-            if(t) window.scrollTo({ top: t.offsetTop - 75, behavior: 'smooth' });
-        });
-    });
-
-    /* ============ COUNTERS ============ */
-    var counted = false;
-    function runCounters(){
-        if(counted) return;
-        var nums = document.querySelectorAll('.stat-num');
-        nums.forEach(function(el){
-            var rect = el.getBoundingClientRect();
-            if(rect.top < window.innerHeight && rect.bottom > 0){
-                counted = true;
-                var target = parseInt(el.getAttribute('data-target'));
-                var cur = 0, step = target / 75;
-                var iv = setInterval(function(){
-                    cur += step;
-                    if(cur >= target){ el.textContent = target + '%'; clearInterval(iv); }
-                    else el.textContent = Math.floor(cur) + '%';
-                }, 22);
-            }
-        });
-    }
-
-    /* ============ FORM ============ */
-    var form = document.getElementById('theForm');
-    if(form){
-        form.addEventListener('submit', function(){
-            var b = document.getElementById('subBtn');
-            b.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right:8px"></i> Submitting...';
-            b.style.opacity = '0.7'; b.disabled = true;
-            setTimeout(function(){
-                b.innerHTML = '<i class="fas fa-check-circle" style="margin-right:8px"></i> Submitted Successfully!';
-                b.style.background = '#2d8f4e'; b.style.opacity = '1';
-            }, 3000);
-        });
-    }
-
-    /* ============ PARALLAX STARS ============ */
-    document.addEventListener('mousemove', function(e){
-        var stars = document.querySelectorAll('.hero-star');
-        var x = e.clientX / window.innerWidth, y = e.clientY / window.innerHeight;
-        stars.forEach(function(s, i){
-            var sp = (i + 1) * 0.35;
-            s.style.transform = 'translate(' + ((x-0.5)*sp*14) + 'px,' + ((y-0.5)*sp*14) + 'px)';
-        });
-    });
-    </script>
-
+/* STAR PARALLAX */
+document.addEventListener('mousemove',function(e){
+  var stars=document.querySelectorAll('.hstr'),x=e.clientX/window.innerWidth,y=e.clientY/window.innerHeight;
+  stars.forEach(function(s,i){var sp=(i+1)*.33;s.style.transform='translate('+((x-.5)*sp*13)+'px,'+((y-.5)*sp*13)+'px)'});
+});
+</script>
 </body>
 </html>
